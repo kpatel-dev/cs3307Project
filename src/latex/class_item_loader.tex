@@ -1,0 +1,98 @@
+\hypertarget{class_item_loader}{}\doxysection{Item\+Loader Class Reference}
+\label{class_item_loader}\index{ItemLoader@{ItemLoader}}
+
+
+Item Loader class.  
+
+
+
+
+{\ttfamily \#include $<$Item\+Loader.\+h$>$}
+
+Inheritance diagram for Item\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_item_loader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_item_loader_a5e61c08f21069080f4ffc9b43667da0f}{Item\+Loader}} (std \+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em Item loader class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_item_loader_ad0b190edaa42985bd46a9ad74ecfc082}{add\+New\+Item}} (std\+::string name, std\+::string id, double price, int current\+Inventory, int minimum\+Inventory, std\+::string ingredients)
+\begin{DoxyCompactList}\small\item\em Add new item method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Item Loader class. 
+
+This is the item loader class, as its name might suggest it loads items. The constructor reads in from the input filestream with the parameters being the file\+Name then opens the file and reads in various pieces of information to help understand. Next line by line in loop reads in from the file and adds it to the array where it can be used later Then the array is used to send to addnewitem where it can be added Finally all items read in are printed then the file is closed \begin{DoxyAuthor}{Author}
+Fahreen Bushra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 27, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_item_loader_a5e61c08f21069080f4ffc9b43667da0f}\label{class_item_loader_a5e61c08f21069080f4ffc9b43667da0f}} 
+\index{ItemLoader@{ItemLoader}!ItemLoader@{ItemLoader}}
+\index{ItemLoader@{ItemLoader}!ItemLoader@{ItemLoader}}
+\doxysubsubsection{\texorpdfstring{ItemLoader()}{ItemLoader()}}
+{\footnotesize\ttfamily Item\+Loader\+::\+Item\+Loader (\begin{DoxyParamCaption}\item[{std \+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Item loader class. 
+
+This is the item loader class, as its name might suggest it loads items. The constructor reads in from the input filestream with the parameters being the file\+Name then opens the file and reads in various pieces of information to help understand. next line by line in loop reads in from the file and adds it to the array where it can be used later Then the array is used to send to addnewitem where it can be added finally all items read in are printed then the file is closed \begin{DoxyAuthor}{Author}
+Fahreen Bushra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 27, 2019
+\end{DoxyDate}
+Item loader constructor
+
+Reads in a file to load it\textquotesingle{}s items as described above 
+\begin{DoxyParams}{Parameters}
+{\em string} & file name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_item_loader_ad0b190edaa42985bd46a9ad74ecfc082}\label{class_item_loader_ad0b190edaa42985bd46a9ad74ecfc082}} 
+\index{ItemLoader@{ItemLoader}!addNewItem@{addNewItem}}
+\index{addNewItem@{addNewItem}!ItemLoader@{ItemLoader}}
+\doxysubsubsection{\texorpdfstring{addNewItem()}{addNewItem()}}
+{\footnotesize\ttfamily void Item\+Loader\+::add\+New\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{id,  }\item[{double}]{price,  }\item[{int}]{current\+Inventory,  }\item[{int}]{minimum\+Inventory,  }\item[{std\+::string}]{ingredients }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Add new item method. 
+
+Method for the creation of new menu items to add to the set
+
+Method for the addition of individual items to the set This is where the information of the array is sent, where it will be used to create a new menu item 
+\begin{DoxyParams}{Parameters}
+{\em string} & item name \\
+\hline
+{\em double} & item id \\
+\hline
+{\em int} & current inventory amount \\
+\hline
+{\em int} & minimum inventory amount \\
+\hline
+{\em string} & ingredients \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Item\+Loader.\+h\item 
+Item\+Loader.\+cpp\end{DoxyCompactItemize}

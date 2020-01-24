@@ -1,0 +1,288 @@
+\hypertarget{class_inventory_manager}{}\doxysection{Inventory\+Manager Class Reference}
+\label{class_inventory_manager}\index{InventoryManager@{InventoryManager}}
+
+
+Inventory Manager class.  
+
+
+
+
+{\ttfamily \#include $<$Inventory\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_inventory_manager_a512a0bfc118080463aabc42267b28036}{$\sim$\+Inventory\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Inventory Manager destructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ \mbox{\hyperlink{class_inventory_manager_a43e3c7f47e37088696bc7052ceb3ad2e}{get\+Menu\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Inventory getter method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_manager_abacaeff07c066110a1b7c9a5dfb4d528}{set\+Menu\+Items}} (std\+::vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ \mbox{\hyperlink{class_inventory_manager_a5e79e03cf61a51e7c7a59ec62c1eb3a1}{items}})
+\begin{DoxyCompactList}\small\item\em Inventory setter method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_manager_a0ec18bb262a047230e0d93d0d94755be}{print\+All\+Menu\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Print menu items method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_manager_aaa66bdf4fa87f6e35416dd2cbb275475}{print\+Menu\+Item}} (std\+::string item\+Name)
+\begin{DoxyCompactList}\small\item\em Print detailed list of menu items method. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_inventory_manager_a020cc7c641b26f515fe977b65d60a0a1}{add\+Menu\+Item}} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} item)
+\begin{DoxyCompactList}\small\item\em Add new menu item method. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_inventory_manager_a65401167084ad2f6abbdba270ec790b5}{remove\+Menu\+Item}} (std\+::string item\+Name)
+\begin{DoxyCompactList}\small\item\em Remove menu item (by name) method. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_inventory_manager_a72540128d913de09e3372209e7d567ab}{remove\+Menu\+Item}} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} item)
+\begin{DoxyCompactList}\small\item\em Remove menu item (by item) method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$ \mbox{\hyperlink{class_inventory_manager_af43c03c428d54541eaf7372c6bac42ae}{find\+Menu\+Item}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Find menu item method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \& \mbox{\hyperlink{class_inventory_manager_a15394f5ce09a20a5ee85f7854d246fe9}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves instance of \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inventory_manager_ad962e4282b5a2c6521f1268ac018bd50}{Inventory\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Inventory Manager protected constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inventory_manager_a0e0333dc095ee095d5d1b7d42e120839}{Inventory\+Manager}} (\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&other)
+\begin{DoxyCompactList}\small\item\em Inventory Manager constructor overridden. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \& \mbox{\hyperlink{class_inventory_manager_a41843c90521e9ca52f14dcfa9d6e06ef}{operator=}} (\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} other)
+\begin{DoxyCompactList}\small\item\em The equals operator overridden. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ \mbox{\hyperlink{class_inventory_manager_a5e79e03cf61a51e7c7a59ec62c1eb3a1}{items}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} $\ast$ \mbox{\hyperlink{class_inventory_manager_a56d252492d45ba74a0bc8f3dd9f1a3a3}{\+\_\+instance}} =N\+U\+LL
+\begin{DoxyCompactList}\small\item\em Inventory Manager instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Inventory Manager class. 
+
+This class allows you to create instances of a inventory and has several funtions to be able to manuplulate the data, such as getters, setters and deletes \begin{DoxyAuthor}{Author}
+Kajal Patel 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 27, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_inventory_manager_a0e0333dc095ee095d5d1b7d42e120839}\label{class_inventory_manager_a0e0333dc095ee095d5d1b7d42e120839}} 
+\index{InventoryManager@{InventoryManager}!InventoryManager@{InventoryManager}}
+\index{InventoryManager@{InventoryManager}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{InventoryManager()}{InventoryManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Inventory\+Manager\+::\+Inventory\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inventory Manager constructor overridden. 
+
+Prevents copying or sharing but reducing these to nothing and not adding any info or an instance to be able to work with it 
+\begin{DoxyParams}{Parameters}
+{\em other} & the other \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} object that should be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} object created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_inventory_manager_ad962e4282b5a2c6521f1268ac018bd50}\label{class_inventory_manager_ad962e4282b5a2c6521f1268ac018bd50}} 
+\index{InventoryManager@{InventoryManager}!InventoryManager@{InventoryManager}}
+\index{InventoryManager@{InventoryManager}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{InventoryManager()}{InventoryManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Inventory\+Manager\+::\+Inventory\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Inventory Manager protected constructor. 
+
+This is a singleton implementation (protected constructor) used to clear an instance of the inventorymanager, removes all inside \mbox{\Hypertarget{class_inventory_manager_a512a0bfc118080463aabc42267b28036}\label{class_inventory_manager_a512a0bfc118080463aabc42267b28036}} 
+\index{InventoryManager@{InventoryManager}!````~InventoryManager@{$\sim$InventoryManager}}
+\index{````~InventoryManager@{$\sim$InventoryManager}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$InventoryManager()}{~InventoryManager()}}
+{\footnotesize\ttfamily Inventory\+Manager\+::$\sim$\+Inventory\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Inventory Manager destructor. 
+
+When the inventory manager is no longer required this destructs the instance and clears the items 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_inventory_manager_a020cc7c641b26f515fe977b65d60a0a1}\label{class_inventory_manager_a020cc7c641b26f515fe977b65d60a0a1}} 
+\index{InventoryManager@{InventoryManager}!addMenuItem@{addMenuItem}}
+\index{addMenuItem@{addMenuItem}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{addMenuItem()}{addMenuItem()}}
+{\footnotesize\ttfamily int Inventory\+Manager\+::add\+Menu\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_menu_item}{Menu\+Item}}}]{item }\end{DoxyParamCaption})}
+
+
+
+Add new menu item method. 
+
+Tries to add an item to the list of all menu items, if the name already exists in the list then it comments saying you should remove the old one before adding a new item with the matching name, it also rejects items that do not have a valid id 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_menu_item}{Menu\+Item}}} & object to be added to inventory \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_inventory_manager_af43c03c428d54541eaf7372c6bac42ae}\label{class_inventory_manager_af43c03c428d54541eaf7372c6bac42ae}} 
+\index{InventoryManager@{InventoryManager}!findMenuItem@{findMenuItem}}
+\index{findMenuItem@{findMenuItem}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{findMenuItem()}{findMenuItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$ Inventory\+Manager\+::find\+Menu\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Find menu item method. 
+
+This method tries to locate an item by matching the name from the list of menu items, if the name does not exist in the list then it comments saying that the item was not found 
+\begin{DoxyParams}{Parameters}
+{\em string} & item name to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} object found from list of menu items 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_inventory_manager_a43e3c7f47e37088696bc7052ceb3ad2e}\label{class_inventory_manager_a43e3c7f47e37088696bc7052ceb3ad2e}} 
+\index{InventoryManager@{InventoryManager}!getMenuItems@{getMenuItems}}
+\index{getMenuItems@{getMenuItems}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{getMenuItems()}{getMenuItems()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ Inventory\+Manager\+::get\+Menu\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inventory getter method. 
+
+This returns the set of items which are in the current inventory \begin{DoxyReturn}{Returns}
+vector set of items 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_inventory_manager_a15394f5ce09a20a5ee85f7854d246fe9}\label{class_inventory_manager_a15394f5ce09a20a5ee85f7854d246fe9}} 
+\index{InventoryManager@{InventoryManager}!instance@{instance}}
+\index{instance@{instance}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \& Inventory\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieves instance of \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}}. 
+
+If the inventory manager doesnt exist then it creates a new instance of the inventory manager then returns such instance in the form of a pointer \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} singleton instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_inventory_manager_a41843c90521e9ca52f14dcfa9d6e06ef}\label{class_inventory_manager_a41843c90521e9ca52f14dcfa9d6e06ef}} 
+\index{InventoryManager@{InventoryManager}!operator=@{operator=}}
+\index{operator=@{operator=}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \& Inventory\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The equals operator overridden. 
+
+Prevents copying or sharing but reducing these to nothing and not adding any info or an instance to be able to work with it 
+\begin{DoxyParams}{Parameters}
+{\em other} & the other \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} object that should be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} object created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_inventory_manager_a0ec18bb262a047230e0d93d0d94755be}\label{class_inventory_manager_a0ec18bb262a047230e0d93d0d94755be}} 
+\index{InventoryManager@{InventoryManager}!printAllMenuItems@{printAllMenuItems}}
+\index{printAllMenuItems@{printAllMenuItems}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{printAllMenuItems()}{printAllMenuItems()}}
+{\footnotesize\ttfamily void Inventory\+Manager\+::print\+All\+Menu\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print menu items method. 
+
+Takes the full list of all menu items and for that size loops through sending each line to the other print menu item where it does a job of printing off all information about the one object given to it \mbox{\Hypertarget{class_inventory_manager_aaa66bdf4fa87f6e35416dd2cbb275475}\label{class_inventory_manager_aaa66bdf4fa87f6e35416dd2cbb275475}} 
+\index{InventoryManager@{InventoryManager}!printMenuItem@{printMenuItem}}
+\index{printMenuItem@{printMenuItem}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{printMenuItem()}{printMenuItem()}}
+{\footnotesize\ttfamily void Inventory\+Manager\+::print\+Menu\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name }\end{DoxyParamCaption})}
+
+
+
+Print detailed list of menu items method. 
+
+For each item given to it, goes and searches through the list until it finds the first matching name then prints out all attributes in relation to that item 
+\begin{DoxyParams}{Parameters}
+{\em string} & inventory item name \\
+\hline
+\end{DoxyParams}
+if it can not find the item then jsut prints it cant find it\mbox{\Hypertarget{class_inventory_manager_a72540128d913de09e3372209e7d567ab}\label{class_inventory_manager_a72540128d913de09e3372209e7d567ab}} 
+\index{InventoryManager@{InventoryManager}!removeMenuItem@{removeMenuItem}}
+\index{removeMenuItem@{removeMenuItem}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{removeMenuItem()}{removeMenuItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Inventory\+Manager\+::remove\+Menu\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_menu_item}{Menu\+Item}}}]{item }\end{DoxyParamCaption})}
+
+
+
+Remove menu item (by item) method. 
+
+This method tries to remove an item by extracting its name then calling the remove by name method 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_menu_item}{Menu\+Item}}} & object to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_inventory_manager_a65401167084ad2f6abbdba270ec790b5}\label{class_inventory_manager_a65401167084ad2f6abbdba270ec790b5}} 
+\index{InventoryManager@{InventoryManager}!removeMenuItem@{removeMenuItem}}
+\index{removeMenuItem@{removeMenuItem}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{removeMenuItem()}{removeMenuItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Inventory\+Manager\+::remove\+Menu\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name }\end{DoxyParamCaption})}
+
+
+
+Remove menu item (by name) method. 
+
+This method tries to remove an item by matching the name from the list of menu items, if the name does not exist in the list then it comments saying that the item was not found 
+\begin{DoxyParams}{Parameters}
+{\em string} & name of item to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_inventory_manager_abacaeff07c066110a1b7c9a5dfb4d528}\label{class_inventory_manager_abacaeff07c066110a1b7c9a5dfb4d528}} 
+\index{InventoryManager@{InventoryManager}!setMenuItems@{setMenuItems}}
+\index{setMenuItems@{setMenuItems}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{setMenuItems()}{setMenuItems()}}
+{\footnotesize\ttfamily void Inventory\+Manager\+::set\+Menu\+Items (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$}]{items }\end{DoxyParamCaption})}
+
+
+
+Inventory setter method. 
+
+This clears the old inventory then sets the current inventory by adding new items passed in by parameter, one new at a time is added in a loop 
+\begin{DoxyParams}{Parameters}
+{\em vector} & of new inventory items \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_inventory_manager_a56d252492d45ba74a0bc8f3dd9f1a3a3}\label{class_inventory_manager_a56d252492d45ba74a0bc8f3dd9f1a3a3}} 
+\index{InventoryManager@{InventoryManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} $\ast$ Inventory\+Manager\+::\+\_\+instance =N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Inventory Manager instance. 
+
+The class only allows one instance of the inventory manager
+
+Singleton instance of the inventory manager \mbox{\Hypertarget{class_inventory_manager_a5e79e03cf61a51e7c7a59ec62c1eb3a1}\label{class_inventory_manager_a5e79e03cf61a51e7c7a59ec62c1eb3a1}} 
+\index{InventoryManager@{InventoryManager}!items@{items}}
+\index{items@{items}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_menu_item}{Menu\+Item}}$>$ Inventory\+Manager\+::items\hspace{0.3cm}{\ttfamily [private]}}
+
+The class allows one menu list per instance manager reference 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Inventory\+Manager.\+h\item 
+Inventory\+Manager.\+cpp\end{DoxyCompactItemize}

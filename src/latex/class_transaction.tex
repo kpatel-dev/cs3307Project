@@ -1,0 +1,276 @@
+\hypertarget{class_transaction}{}\doxysection{Transaction Class Reference}
+\label{class_transaction}\index{Transaction@{Transaction}}
+
+
+\mbox{\hyperlink{class_transaction}{Transaction}} class.  
+
+
+
+
+{\ttfamily \#include $<$Transaction.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transaction_ab47005b855d38bc324bb79fd023baa13}{Transaction}} ()
+\item 
+\mbox{\hyperlink{class_transaction_ae33d254d84239907d0f111ce1ef42592}{Transaction}} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \mbox{\hyperlink{class_transaction_a68b213c9dc4058b053623d822da151aa}{menu\+Item}}, int id, int \mbox{\hyperlink{class_transaction_ab6a224e3af41803d86f07e4f0d8f23d2}{quantity}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_transaction}{Transaction}} constructor this method created a transaction object with the attributes given in the parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_afac5f616926cc6bfa3e61d1d9a41970c}\label{class_transaction_afac5f616926cc6bfa3e61d1d9a41970c}} 
+{\bfseries Transaction} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \mbox{\hyperlink{class_transaction_a68b213c9dc4058b053623d822da151aa}{menu\+Item}}, int id, int \mbox{\hyperlink{class_transaction_ab6a224e3af41803d86f07e4f0d8f23d2}{quantity}}, double \mbox{\hyperlink{class_transaction_a63c6ea0d68a0c41501f59fe333527654}{price}}, double \mbox{\hyperlink{class_transaction_ade3e362e86d7e3cb3e6677afa06ad5f2}{revenue}})
+\item 
+\mbox{\hyperlink{class_transaction_a362b0d2524d0c799165190517192dca9}{$\sim$\+Transaction}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_transaction}{Transaction}} deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \mbox{\hyperlink{class_transaction_a359655f775a0f652b0e6038794bfa93a}{get\+Customer\+Order\+Item}} ()
+\begin{DoxyCompactList}\small\item\em getter method to get customer order item \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_transaction_ae9e225c430ff975655058fb5c42b4c43}{get\+Customer\+Order\+Item\+Name}} ()
+\begin{DoxyCompactList}\small\item\em getter method to get the name of the item the customer ordered \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_transaction_a8124ad7ff26bb8fb106b6949919a5d1c}{get\+Transaction\+Id}} ()
+\begin{DoxyCompactList}\small\item\em getter method to get the transaction id \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_transaction_a66b97dcbf1e0d98b60b4a3dd1a874fa3}{get\+Transaction\+Quantity}} ()
+\begin{DoxyCompactList}\small\item\em getter method to get quanaitity of items \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_transaction_a73ccf52c014a49675962e66d2cffe4af}{get\+Transaction\+Revenue}} ()
+\begin{DoxyCompactList}\small\item\em getter method to get the revenue of the transaction \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_transaction_ab4e72acd9e30ff17a9c9f068ed4cae34}{get\+Transaction\+Item\+Price}} ()
+\begin{DoxyCompactList}\small\item\em getter method to get the transactions item price \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_transaction_a656e151854e3effd32a94b688b9b0bf2}{is\+Fulfilled}} ()
+\begin{DoxyCompactList}\small\item\em boolean to check if the transaction is complete \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transaction_a55f77b3bcc98a47561b35f98e36190b3}{mark\+Complete}} ()
+\begin{DoxyCompactList}\small\item\em method to mark the transaction as complete \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transaction_a1255a99e6c14b79d580d462c16d6df40}{print\+Transaction}} ()
+\begin{DoxyCompactList}\small\item\em method to print the information of the transaction \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \mbox{\hyperlink{class_transaction_a68b213c9dc4058b053623d822da151aa}{menu\+Item}}
+\item 
+int \mbox{\hyperlink{class_transaction_a3bd03df072958fe54b735e02cb2454f6}{transaction\+ID}}
+\item 
+int \mbox{\hyperlink{class_transaction_ab6a224e3af41803d86f07e4f0d8f23d2}{quantity}}
+\item 
+double \mbox{\hyperlink{class_transaction_a63c6ea0d68a0c41501f59fe333527654}{price}}
+\item 
+double \mbox{\hyperlink{class_transaction_ade3e362e86d7e3cb3e6677afa06ad5f2}{revenue}}
+\item 
+bool \mbox{\hyperlink{class_transaction_a2602a0a4f16f4915cb77635e5aa547c0}{fulfilled}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_transaction}{Transaction}} class. 
+
+this class has the information needed for one transaction
+
+\begin{DoxyAuthor}{Author}
+Abigail Garces, Kajal Patel 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 22, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_transaction_ab47005b855d38bc324bb79fd023baa13}\label{class_transaction_ab47005b855d38bc324bb79fd023baa13}} 
+\index{Transaction@{Transaction}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{Transaction()}{Transaction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Transaction\+::\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructors to initialize a transaction \mbox{\Hypertarget{class_transaction_ae33d254d84239907d0f111ce1ef42592}\label{class_transaction_ae33d254d84239907d0f111ce1ef42592}} 
+\index{Transaction@{Transaction}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{Transaction()}{Transaction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Transaction\+::\+Transaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_menu_item}{Menu\+Item}}}]{menu\+Item,  }\item[{int}]{id,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_transaction}{Transaction}} constructor this method created a transaction object with the attributes given in the parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_menu_item}{Menu\+Item}}} & menuitem that customer is ordering \\
+\hline
+{\em int} & id of the transaction \\
+\hline
+{\em int} & quantity of menuitems customer is ordering \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transaction_a362b0d2524d0c799165190517192dca9}\label{class_transaction_a362b0d2524d0c799165190517192dca9}} 
+\index{Transaction@{Transaction}!````~Transaction@{$\sim$Transaction}}
+\index{````~Transaction@{$\sim$Transaction}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{$\sim$Transaction()}{~Transaction()}}
+{\footnotesize\ttfamily Transaction\+::$\sim$\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_transaction}{Transaction}} deconstructor. 
+
+Deconstructor
+
+destroys the transaction that is not needed 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transaction_a359655f775a0f652b0e6038794bfa93a}\label{class_transaction_a359655f775a0f652b0e6038794bfa93a}} 
+\index{Transaction@{Transaction}!getCustomerOrderItem@{getCustomerOrderItem}}
+\index{getCustomerOrderItem@{getCustomerOrderItem}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{getCustomerOrderItem()}{getCustomerOrderItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menu_item}{Menu\+Item}} Transaction\+::get\+Customer\+Order\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method to get customer order item 
+
+Getter methods for members of a transactions
+
+gets the Menuitem that the customer ordered \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} object of the item customer ordered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_ae9e225c430ff975655058fb5c42b4c43}\label{class_transaction_ae9e225c430ff975655058fb5c42b4c43}} 
+\index{Transaction@{Transaction}!getCustomerOrderItemName@{getCustomerOrderItemName}}
+\index{getCustomerOrderItemName@{getCustomerOrderItemName}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{getCustomerOrderItemName()}{getCustomerOrderItemName()}}
+{\footnotesize\ttfamily string Transaction\+::get\+Customer\+Order\+Item\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method to get the name of the item the customer ordered 
+
+gets the name of the item customer ordered \begin{DoxyReturn}{Returns}
+a string of the name of the menuitem the customer ordered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_a8124ad7ff26bb8fb106b6949919a5d1c}\label{class_transaction_a8124ad7ff26bb8fb106b6949919a5d1c}} 
+\index{Transaction@{Transaction}!getTransactionId@{getTransactionId}}
+\index{getTransactionId@{getTransactionId}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{getTransactionId()}{getTransactionId()}}
+{\footnotesize\ttfamily int Transaction\+::get\+Transaction\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method to get the transaction id 
+
+gets the id of the transaction \begin{DoxyReturn}{Returns}
+int id of the transaction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_ab4e72acd9e30ff17a9c9f068ed4cae34}\label{class_transaction_ab4e72acd9e30ff17a9c9f068ed4cae34}} 
+\index{Transaction@{Transaction}!getTransactionItemPrice@{getTransactionItemPrice}}
+\index{getTransactionItemPrice@{getTransactionItemPrice}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{getTransactionItemPrice()}{getTransactionItemPrice()}}
+{\footnotesize\ttfamily double Transaction\+::get\+Transaction\+Item\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method to get the transactions item price 
+
+gets the price of the transaction \begin{DoxyReturn}{Returns}
+double type of the price of the transaction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_a66b97dcbf1e0d98b60b4a3dd1a874fa3}\label{class_transaction_a66b97dcbf1e0d98b60b4a3dd1a874fa3}} 
+\index{Transaction@{Transaction}!getTransactionQuantity@{getTransactionQuantity}}
+\index{getTransactionQuantity@{getTransactionQuantity}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{getTransactionQuantity()}{getTransactionQuantity()}}
+{\footnotesize\ttfamily int Transaction\+::get\+Transaction\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method to get quanaitity of items 
+
+gets the quantity of menuitems the customer ordered \begin{DoxyReturn}{Returns}
+int the quantity of items the customer ordered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_a73ccf52c014a49675962e66d2cffe4af}\label{class_transaction_a73ccf52c014a49675962e66d2cffe4af}} 
+\index{Transaction@{Transaction}!getTransactionRevenue@{getTransactionRevenue}}
+\index{getTransactionRevenue@{getTransactionRevenue}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{getTransactionRevenue()}{getTransactionRevenue()}}
+{\footnotesize\ttfamily double Transaction\+::get\+Transaction\+Revenue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method to get the revenue of the transaction 
+
+gets the total revenue of the transaction \begin{DoxyReturn}{Returns}
+double type of the transactions revenue 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_a656e151854e3effd32a94b688b9b0bf2}\label{class_transaction_a656e151854e3effd32a94b688b9b0bf2}} 
+\index{Transaction@{Transaction}!isFulfilled@{isFulfilled}}
+\index{isFulfilled@{isFulfilled}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{isFulfilled()}{isFulfilled()}}
+{\footnotesize\ttfamily bool Transaction\+::is\+Fulfilled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+boolean to check if the transaction is complete 
+
+functions needed to process a transaction
+
+boolean method to check if the transaction is fulfilled \begin{DoxyReturn}{Returns}
+boolean true if the transaction is fulfilled, false if it has not been fulfilled checks if the transaction has been fulfilled 
+
+boolean true if transaction is complete, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_a55f77b3bcc98a47561b35f98e36190b3}\label{class_transaction_a55f77b3bcc98a47561b35f98e36190b3}} 
+\index{Transaction@{Transaction}!markComplete@{markComplete}}
+\index{markComplete@{markComplete}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{markComplete()}{markComplete()}}
+{\footnotesize\ttfamily void Transaction\+::mark\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method to mark the transaction as complete 
+
+marks the transaction complete \mbox{\Hypertarget{class_transaction_a1255a99e6c14b79d580d462c16d6df40}\label{class_transaction_a1255a99e6c14b79d580d462c16d6df40}} 
+\index{Transaction@{Transaction}!printTransaction@{printTransaction}}
+\index{printTransaction@{printTransaction}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{printTransaction()}{printTransaction()}}
+{\footnotesize\ttfamily void Transaction\+::print\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method to print the information of the transaction 
+
+print transaction function
+
+prints the transaction like a receipt 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_transaction_a2602a0a4f16f4915cb77635e5aa547c0}\label{class_transaction_a2602a0a4f16f4915cb77635e5aa547c0}} 
+\index{Transaction@{Transaction}!fulfilled@{fulfilled}}
+\index{fulfilled@{fulfilled}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{fulfilled}{fulfilled}}
+{\footnotesize\ttfamily bool Transaction\+::fulfilled\hspace{0.3cm}{\ttfamily [private]}}
+
+boolean to check if the transaction is complete \mbox{\Hypertarget{class_transaction_a68b213c9dc4058b053623d822da151aa}\label{class_transaction_a68b213c9dc4058b053623d822da151aa}} 
+\index{Transaction@{Transaction}!menuItem@{menuItem}}
+\index{menuItem@{menuItem}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{menuItem}{menuItem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menu_item}{Menu\+Item}} Transaction\+::menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+menuitem that the customer is ordering \mbox{\Hypertarget{class_transaction_a63c6ea0d68a0c41501f59fe333527654}\label{class_transaction_a63c6ea0d68a0c41501f59fe333527654}} 
+\index{Transaction@{Transaction}!price@{price}}
+\index{price@{price}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{price}{price}}
+{\footnotesize\ttfamily double Transaction\+::price\hspace{0.3cm}{\ttfamily [private]}}
+
+the price of the transaction \mbox{\Hypertarget{class_transaction_ab6a224e3af41803d86f07e4f0d8f23d2}\label{class_transaction_ab6a224e3af41803d86f07e4f0d8f23d2}} 
+\index{Transaction@{Transaction}!quantity@{quantity}}
+\index{quantity@{quantity}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{quantity}{quantity}}
+{\footnotesize\ttfamily int Transaction\+::quantity\hspace{0.3cm}{\ttfamily [private]}}
+
+the amount of menuitems the customer wants to order \mbox{\Hypertarget{class_transaction_ade3e362e86d7e3cb3e6677afa06ad5f2}\label{class_transaction_ade3e362e86d7e3cb3e6677afa06ad5f2}} 
+\index{Transaction@{Transaction}!revenue@{revenue}}
+\index{revenue@{revenue}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{revenue}{revenue}}
+{\footnotesize\ttfamily double Transaction\+::revenue\hspace{0.3cm}{\ttfamily [private]}}
+
+the total profit made from the transaction \mbox{\Hypertarget{class_transaction_a3bd03df072958fe54b735e02cb2454f6}\label{class_transaction_a3bd03df072958fe54b735e02cb2454f6}} 
+\index{Transaction@{Transaction}!transactionID@{transactionID}}
+\index{transactionID@{transactionID}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{transactionID}{transactionID}}
+{\footnotesize\ttfamily int Transaction\+::transaction\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+the id of the transactions 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Transaction.\+h\item 
+Transaction.\+cpp\end{DoxyCompactItemize}

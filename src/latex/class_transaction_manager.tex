@@ -1,0 +1,358 @@
+\hypertarget{class_transaction_manager}{}\doxysection{Transaction\+Manager Class Reference}
+\label{class_transaction_manager}\index{TransactionManager@{TransactionManager}}
+
+
+\mbox{\hyperlink{class_transaction}{Transaction}} Manager Class.  
+
+
+
+
+{\ttfamily \#include $<$Transaction\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_transaction_manager_ab48dc6bf966c5c98e0734e1b1d819ef9}{$\sim$\+Transaction\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} deconstructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_transaction}{Transaction}} $>$ \mbox{\hyperlink{class_transaction_manager_aec26641ec7186c21961cfff3b4cb6298}{get\+Pending\+Transactions}} ()
+\begin{DoxyCompactList}\small\item\em getter method to get a vector of all the pending transactions \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_transaction}{Transaction}} $>$ \mbox{\hyperlink{class_transaction_manager_a5101c27a5e948c4867c4b2cf6ddab553}{get\+Completed\+Transactions}} ()
+\begin{DoxyCompactList}\small\item\em getter method to get a vector of all the completed transactions \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_transaction_manager_a589058b9440836f08b3b5aff681d808f}{get\+Total\+Profit}} ()
+\begin{DoxyCompactList}\small\item\em getter method to get the total profit \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_transaction_manager_ad2b1b4ff53f3f8ffecee152d2491ae53}{create\+Transaction}} (std\+::string item\+Name, int quantity)
+\begin{DoxyCompactList}\small\item\em method to create a transaction \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_transaction_manager_a53e444d97f09cbb19a5b27eddd84bd10}{fulfill\+Transaction}} (int transaction\+ID)
+\begin{DoxyCompactList}\small\item\em method to fulfill a transaction \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transaction_manager_a803ac4eda1624b3098741dbd2db5e0c2}{print\+All\+Pending\+Transactions}} ()
+\begin{DoxyCompactList}\small\item\em method to print all pending transactions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transaction_manager_a257f906a92a797e9b7379e524cbec410}{print\+All\+Completed\+Transactions}} ()
+\begin{DoxyCompactList}\small\item\em method to print all completed transactions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transaction_manager_a93633f9fa33c761128be8d6400d73a24}{print\+All\+Transactions}} ()
+\begin{DoxyCompactList}\small\item\em method to print all the transactions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transaction_manager_a560cdec107d39ea9bb689008f06cb680}{print\+Total\+Profit}} ()
+\begin{DoxyCompactList}\small\item\em method to print the total profit \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} \& \mbox{\hyperlink{class_transaction_manager_a4b39c953213055ef6024f0a2e2e17eaa}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets an instance of a \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transaction_manager_ac5ced818a8f63f5981ab0e1e2dbf2e5c}{Transaction\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em the constructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transaction_manager_a01b2378f2ffbff8bc18ce78cf4b5a26c}{Transaction\+Manager}} (\mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} \&other)
+\begin{DoxyCompactList}\small\item\em copy constructor overridden \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} \& \mbox{\hyperlink{class_transaction_manager_a48d50d6b90c78b0c7e4d26e5a5084cf4}{operator=}} (\mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} other)
+\begin{DoxyCompactList}\small\item\em copy constructor overridden \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_transaction_manager_ac24de3dbec41def10b9fdf1a4bd4e121}{total\+Transactions}}
+\item 
+double \mbox{\hyperlink{class_transaction_manager_a664f5123630bd6e081635af676b2f0d0}{total\+Profit}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_transaction}{Transaction}} $>$ \mbox{\hyperlink{class_transaction_manager_aa997b5b2e1f7aa14e8fb03eecb4fe9a5}{pending\+Transactions}}
+\item 
+\mbox{\Hypertarget{class_transaction_manager_a028bfb7a82292c6723bb72d7d4db89d8}\label{class_transaction_manager_a028bfb7a82292c6723bb72d7d4db89d8}} 
+std\+::vector$<$ \mbox{\hyperlink{class_transaction}{Transaction}} $>$ {\bfseries completed\+Transactions}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_transaction}{Transaction}} $>$ \mbox{\hyperlink{class_transaction_manager_a85b6dc73811769c991c9c227b491e89b}{all\+Transactions}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} $\ast$ \mbox{\hyperlink{class_transaction_manager_acf2617c2c9772b0d42338aac311f004e}{\+\_\+instance}} = N\+U\+LL
+\begin{DoxyCompactList}\small\item\em Instance of \mbox{\hyperlink{class_transaction}{Transaction}} manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_transaction}{Transaction}} Manager Class. 
+
+This class manages all the transactions created and fulfilled \begin{DoxyAuthor}{Author}
+Abigail Garces, Kajal Patel 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 22, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_transaction_manager_a01b2378f2ffbff8bc18ce78cf4b5a26c}\label{class_transaction_manager_a01b2378f2ffbff8bc18ce78cf4b5a26c}} 
+\index{TransactionManager@{TransactionManager}!TransactionManager@{TransactionManager}}
+\index{TransactionManager@{TransactionManager}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{TransactionManager()}{TransactionManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Transaction\+Manager\+::\+Transaction\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+copy constructor overridden 
+
+Singleton design pattern. Restricts instantiation of \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} to one object 
+\begin{DoxyParams}{Parameters}
+{\em Transaction\+Manager\&} & other\\
+\hline
+\end{DoxyParams}
+object cannot be copied since this is a singleton design pattern 
+\begin{DoxyParams}{Parameters}
+{\em other} & A \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} object that should be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}}, the new object created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_manager_ac5ced818a8f63f5981ab0e1e2dbf2e5c}\label{class_transaction_manager_ac5ced818a8f63f5981ab0e1e2dbf2e5c}} 
+\index{TransactionManager@{TransactionManager}!TransactionManager@{TransactionManager}}
+\index{TransactionManager@{TransactionManager}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{TransactionManager()}{TransactionManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Transaction\+Manager\+::\+Transaction\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the constructor 
+
+since this is a singleton class, the constructor cannot be called outside of the class \mbox{\Hypertarget{class_transaction_manager_ab48dc6bf966c5c98e0734e1b1d819ef9}\label{class_transaction_manager_ab48dc6bf966c5c98e0734e1b1d819ef9}} 
+\index{TransactionManager@{TransactionManager}!````~TransactionManager@{$\sim$TransactionManager}}
+\index{````~TransactionManager@{$\sim$TransactionManager}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$TransactionManager()}{~TransactionManager()}}
+{\footnotesize\ttfamily Transaction\+Manager\+::$\sim$\+Transaction\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} deconstructor. 
+
+Deconstructor method for \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} object that is no longer needed
+
+deconstructor method for a \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} object that is no longer needed 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transaction_manager_ad2b1b4ff53f3f8ffecee152d2491ae53}\label{class_transaction_manager_ad2b1b4ff53f3f8ffecee152d2491ae53}} 
+\index{TransactionManager@{TransactionManager}!createTransaction@{createTransaction}}
+\index{createTransaction@{createTransaction}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{createTransaction()}{createTransaction()}}
+{\footnotesize\ttfamily int Transaction\+Manager\+::create\+Transaction (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+method to create a transaction 
+
+Method to create a transation 
+\begin{DoxyParams}{Parameters}
+{\em string} & item\+Name name of the menu item customer wants to order \\
+\hline
+{\em int} & quantity number of items the customer wants to order\\
+\hline
+\end{DoxyParams}
+creates a transactions with the customers order item and quantity of it by calling the \mbox{\hyperlink{class_transaction}{Transaction}} constructor 
+\begin{DoxyParams}{Parameters}
+{\em string} & the item name that the customer wants to order \\
+\hline
+{\em int} & the quantity of the item the customer wants to order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the transaction id if it was successful, otherwise -\/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_manager_a53e444d97f09cbb19a5b27eddd84bd10}\label{class_transaction_manager_a53e444d97f09cbb19a5b27eddd84bd10}} 
+\index{TransactionManager@{TransactionManager}!fulfillTransaction@{fulfillTransaction}}
+\index{fulfillTransaction@{fulfillTransaction}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{fulfillTransaction()}{fulfillTransaction()}}
+{\footnotesize\ttfamily int Transaction\+Manager\+::fulfill\+Transaction (\begin{DoxyParamCaption}\item[{int}]{transaction\+ID }\end{DoxyParamCaption})}
+
+
+
+method to fulfill a transaction 
+
+Method to complete a transaction that has been created 
+\begin{DoxyParams}{Parameters}
+{\em int} & transaction\+ID\\
+\hline
+\end{DoxyParams}
+fulfills atransaction that has been created 
+\begin{DoxyParams}{Parameters}
+{\em int} & transaction id, takes a transaction id from a created transaction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the transaction id that has been created and fulfilled, otherwise -\/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_manager_a5101c27a5e948c4867c4b2cf6ddab553}\label{class_transaction_manager_a5101c27a5e948c4867c4b2cf6ddab553}} 
+\index{TransactionManager@{TransactionManager}!getCompletedTransactions@{getCompletedTransactions}}
+\index{getCompletedTransactions@{getCompletedTransactions}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{getCompletedTransactions()}{getCompletedTransactions()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_transaction}{Transaction}} $>$ Transaction\+Manager\+::get\+Completed\+Transactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method to get a vector of all the completed transactions 
+
+Getter method to get a vector of all the completed transactions The transactions that have been created A\+ND fulfilled
+
+gets a set of all the completed transactions that have been created and fulfilled \begin{DoxyReturn}{Returns}
+vector$<$\+Transaction$>$ a vector of completed transactions of type transaction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_manager_aec26641ec7186c21961cfff3b4cb6298}\label{class_transaction_manager_aec26641ec7186c21961cfff3b4cb6298}} 
+\index{TransactionManager@{TransactionManager}!getPendingTransactions@{getPendingTransactions}}
+\index{getPendingTransactions@{getPendingTransactions}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{getPendingTransactions()}{getPendingTransactions()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_transaction}{Transaction}} $>$ Transaction\+Manager\+::get\+Pending\+Transactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method to get a vector of all the pending transactions 
+
+Getter method to get a vector of all the pending transactions. the transactions that have been created but not fulfilled
+
+gets a set of all the pending transactions that have been created but not fulfilled yet \begin{DoxyReturn}{Returns}
+vector$<$\+Transaction$>$ a vector ofpending transactions of type type Transactions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_manager_a589058b9440836f08b3b5aff681d808f}\label{class_transaction_manager_a589058b9440836f08b3b5aff681d808f}} 
+\index{TransactionManager@{TransactionManager}!getTotalProfit@{getTotalProfit}}
+\index{getTotalProfit@{getTotalProfit}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{getTotalProfit()}{getTotalProfit()}}
+{\footnotesize\ttfamily double Transaction\+Manager\+::get\+Total\+Profit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method to get the total profit 
+
+Getter method to get the total profit
+
+gets the total profit made from all of the transactions \begin{DoxyReturn}{Returns}
+the total profit of type double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_manager_a4b39c953213055ef6024f0a2e2e17eaa}\label{class_transaction_manager_a4b39c953213055ef6024f0a2e2e17eaa}} 
+\index{TransactionManager@{TransactionManager}!instance@{instance}}
+\index{instance@{instance}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} \& Transaction\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets an instance of a \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}}. 
+
+Instance method to get a singleton Transacion\+Manager object
+
+Since this is a singleton design pattern class, the single instance of \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} object is returned everytime or a new one if there is no current one \begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} singleton instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_manager_a48d50d6b90c78b0c7e4d26e5a5084cf4}\label{class_transaction_manager_a48d50d6b90c78b0c7e4d26e5a5084cf4}} 
+\index{TransactionManager@{TransactionManager}!operator=@{operator=}}
+\index{operator=@{operator=}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} \& Transaction\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+copy constructor overridden 
+
+Singleton design pattern. Restricts instantiation of \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} to one object 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}}} & other\\
+\hline
+\end{DoxyParams}
+object cannot be copied since it is a singleton design pattern 
+\begin{DoxyParams}{Parameters}
+{\em other} & a \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} object that should be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}}, the new object created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transaction_manager_a257f906a92a797e9b7379e524cbec410}\label{class_transaction_manager_a257f906a92a797e9b7379e524cbec410}} 
+\index{TransactionManager@{TransactionManager}!printAllCompletedTransactions@{printAllCompletedTransactions}}
+\index{printAllCompletedTransactions@{printAllCompletedTransactions}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{printAllCompletedTransactions()}{printAllCompletedTransactions()}}
+{\footnotesize\ttfamily void Transaction\+Manager\+::print\+All\+Completed\+Transactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method to print all completed transactions 
+
+Method to print all the completed transactions Transactions that have been created A\+ND fulfilled
+
+prints transactions that have been created A\+ND F\+U\+L\+F\+I\+L\+L\+ED \mbox{\Hypertarget{class_transaction_manager_a803ac4eda1624b3098741dbd2db5e0c2}\label{class_transaction_manager_a803ac4eda1624b3098741dbd2db5e0c2}} 
+\index{TransactionManager@{TransactionManager}!printAllPendingTransactions@{printAllPendingTransactions}}
+\index{printAllPendingTransactions@{printAllPendingTransactions}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{printAllPendingTransactions()}{printAllPendingTransactions()}}
+{\footnotesize\ttfamily void Transaction\+Manager\+::print\+All\+Pending\+Transactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method to print all pending transactions 
+
+Method to print all the pending transactions. Transactions that have only been created
+
+prints only the transactions that have been created \mbox{\Hypertarget{class_transaction_manager_a93633f9fa33c761128be8d6400d73a24}\label{class_transaction_manager_a93633f9fa33c761128be8d6400d73a24}} 
+\index{TransactionManager@{TransactionManager}!printAllTransactions@{printAllTransactions}}
+\index{printAllTransactions@{printAllTransactions}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{printAllTransactions()}{printAllTransactions()}}
+{\footnotesize\ttfamily void Transaction\+Manager\+::print\+All\+Transactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method to print all the transactions 
+
+Method to print all the transactions transactions that have been created and/or completed
+
+prints all transactions that have been crerated and/or fulfilled \mbox{\Hypertarget{class_transaction_manager_a560cdec107d39ea9bb689008f06cb680}\label{class_transaction_manager_a560cdec107d39ea9bb689008f06cb680}} 
+\index{TransactionManager@{TransactionManager}!printTotalProfit@{printTotalProfit}}
+\index{printTotalProfit@{printTotalProfit}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{printTotalProfit()}{printTotalProfit()}}
+{\footnotesize\ttfamily void Transaction\+Manager\+::print\+Total\+Profit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method to print the total profit 
+
+Method to print the total profit made
+
+the amount of money made 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_transaction_manager_acf2617c2c9772b0d42338aac311f004e}\label{class_transaction_manager_acf2617c2c9772b0d42338aac311f004e}} 
+\index{TransactionManager@{TransactionManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} $\ast$ Transaction\+Manager\+::\+\_\+instance = N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Instance of \mbox{\hyperlink{class_transaction}{Transaction}} manager. 
+
+$<$Singleton design pattern. restricts instantiation of \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} to one object
+
+This is the singleton instance of the stock manager . restricts instantiation of \mbox{\hyperlink{class_transaction_manager}{Transaction\+Manager}} to one object \mbox{\Hypertarget{class_transaction_manager_a85b6dc73811769c991c9c227b491e89b}\label{class_transaction_manager_a85b6dc73811769c991c9c227b491e89b}} 
+\index{TransactionManager@{TransactionManager}!allTransactions@{allTransactions}}
+\index{allTransactions@{allTransactions}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{allTransactions}{allTransactions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_transaction}{Transaction}}$>$ Transaction\+Manager\+::all\+Transactions\hspace{0.3cm}{\ttfamily [private]}}
+
+vector to keep track of completed transactions vector to keep track of all the transactions, created and completed \mbox{\Hypertarget{class_transaction_manager_aa997b5b2e1f7aa14e8fb03eecb4fe9a5}\label{class_transaction_manager_aa997b5b2e1f7aa14e8fb03eecb4fe9a5}} 
+\index{TransactionManager@{TransactionManager}!pendingTransactions@{pendingTransactions}}
+\index{pendingTransactions@{pendingTransactions}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{pendingTransactions}{pendingTransactions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_transaction}{Transaction}}$>$ Transaction\+Manager\+::pending\+Transactions\hspace{0.3cm}{\ttfamily [private]}}
+
+vector to keep track of pending transactions \mbox{\Hypertarget{class_transaction_manager_a664f5123630bd6e081635af676b2f0d0}\label{class_transaction_manager_a664f5123630bd6e081635af676b2f0d0}} 
+\index{TransactionManager@{TransactionManager}!totalProfit@{totalProfit}}
+\index{totalProfit@{totalProfit}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{totalProfit}{totalProfit}}
+{\footnotesize\ttfamily double Transaction\+Manager\+::total\+Profit\hspace{0.3cm}{\ttfamily [private]}}
+
+int to keep traack of the total profit \mbox{\Hypertarget{class_transaction_manager_ac24de3dbec41def10b9fdf1a4bd4e121}\label{class_transaction_manager_ac24de3dbec41def10b9fdf1a4bd4e121}} 
+\index{TransactionManager@{TransactionManager}!totalTransactions@{totalTransactions}}
+\index{totalTransactions@{totalTransactions}!TransactionManager@{TransactionManager}}
+\doxysubsubsection{\texorpdfstring{totalTransactions}{totalTransactions}}
+{\footnotesize\ttfamily int Transaction\+Manager\+::total\+Transactions\hspace{0.3cm}{\ttfamily [private]}}
+
+int to keep track of the number of transactions 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Transaction\+Manager.\+h\item 
+Transaction\+Manager.\+cpp\end{DoxyCompactItemize}

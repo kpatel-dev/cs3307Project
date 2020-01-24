@@ -1,0 +1,277 @@
+\hypertarget{class_staff_manager}{}\doxysection{Staff\+Manager Class Reference}
+\label{class_staff_manager}\index{StaffManager@{StaffManager}}
+
+
+Staff Manager class.  
+
+
+
+
+{\ttfamily \#include $<$Staff\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_staff_manager_a9f66df705b1fa42a8395d0f8fa31b808}{$\sim$\+Staff\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Staff manager destructor When the staff manager is no longer required this destructs the instance and clears the items. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ \mbox{\hyperlink{class_staff_manager_af933f127fbb823a1a2147ef94bd5bb1b}{get\+Staff}} ()
+\begin{DoxyCompactList}\small\item\em Staff getter method This returns the set of members which are in the current Staff. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ \mbox{\hyperlink{class_staff_manager_a15b554a55f275a65d9bf6a103a01a753}{get\+Managers}} ()
+\begin{DoxyCompactList}\small\item\em Managers getter method Has a list of managers and if their Utype is a manager then push back into manager using the parameter of staff location. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ \mbox{\hyperlink{class_staff_manager_a6ee3e42271c89043133fa39daff63743}{get\+Employees}} ()
+\begin{DoxyCompactList}\small\item\em Employees getter method Has a list of employees and if their Utype is a employee then push back into employee using the parameter of staff location. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_staff_manager_a8e2f3c95646b20f7f7f2f6f35da0868b}{add\+Staff}} (\mbox{\hyperlink{class_user}{User}} new\+User)
+\begin{DoxyCompactList}\small\item\em Add staff member method Tries to add a staff member to the list of all staff, if the name already exists in the list then it comments saying you should remove the old one before adding a new item with the matching name. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_staff_manager_ad8bb099f847bb495636334771d916ba2}{remove\+Staff}} (\mbox{\hyperlink{class_user}{User}} curr\+User)
+\begin{DoxyCompactList}\small\item\em Remove staff member method This method tries to remove a staff member by extracting its name then calling the remove by name method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_staff_manager_aba8f77167419e91efe4d49a5e6e3eab3}\label{class_staff_manager_aba8f77167419e91efe4d49a5e6e3eab3}} 
+int {\bfseries remove\+Staff} (std\+::string user\+Id)
+\item 
+\mbox{\Hypertarget{class_staff_manager_a08516b3c72d8e2cf7b3f98a6ace6f6b6}\label{class_staff_manager_a08516b3c72d8e2cf7b3f98a6ace6f6b6}} 
+void \mbox{\hyperlink{class_staff_manager_a08516b3c72d8e2cf7b3f98a6ace6f6b6}{print\+All\+Employees}} ()
+\begin{DoxyCompactList}\small\item\em Print all employees method Gets the full list of all employees then prints all employees off. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_staff_manager_a4570dc093a84041a3179f8f8bfcd5efd}\label{class_staff_manager_a4570dc093a84041a3179f8f8bfcd5efd}} 
+void \mbox{\hyperlink{class_staff_manager_a4570dc093a84041a3179f8f8bfcd5efd}{print\+All\+Managers}} ()
+\begin{DoxyCompactList}\small\item\em Print all managers method Gets the full list of all employees then prints all employees off. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_staff_manager_ae67c64dd584e7e764622564b3e7b678a}\label{class_staff_manager_ae67c64dd584e7e764622564b3e7b678a}} 
+void \mbox{\hyperlink{class_staff_manager_ae67c64dd584e7e764622564b3e7b678a}{print\+All\+Staff}} ()
+\begin{DoxyCompactList}\small\item\em Print all staff method Calls both print staff and print managers, this way printing off all staff members. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_staff_manager_afa2541ca8ef7d2486fdf54fc35fcc454}{print\+Staff}} (std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ staff\+Members)
+\begin{DoxyCompactList}\small\item\em Print given staff method For this list of staff members it will loop through and call the print username on each staff. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_staff_manager_ad26a3812b3f3df303e68dcd1203140bd}{print\+User}} (std\+::string user\+Id)
+\begin{DoxyCompactList}\small\item\em Print user method This takes a singular staff ID and looks through the whole list until it finds it then displays all attributes to the screen, returns nothing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} \& \mbox{\hyperlink{class_staff_manager_a08401a4ced090616a0f3fe2d67ebd8df}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Instance creator If the staff manager doesnt exist then it creates a new instance of the staff manager then returns such instance in the form of a pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_staff_manager_a8263a32fff9cee5d8bdf42eeb00190c7}{Staff\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Protected Staff Manager constructor This is a singleton implementation (protected constructor) used to clear an instance of the staff manager, removes all inside ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_staff_manager_a263f32c971943ce51a499797c0017d17}{Staff\+Manager}} (\mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} \&other)
+\begin{DoxyCompactList}\small\item\em copy constructor overridden \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} \& \mbox{\hyperlink{class_staff_manager_a963ea2d946a0738f5f1019527733c4e3}{operator=}} (\mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} other)
+\begin{DoxyCompactList}\small\item\em copy constructor overridden \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ \mbox{\hyperlink{class_staff_manager_a1d199122ed66c6327513c18df1e2e8c3}{staff}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} $\ast$ \mbox{\hyperlink{class_staff_manager_a1623f72714bfbca90352ec81f8279b45}{\+\_\+instance}} =N\+U\+LL
+\begin{DoxyCompactList}\small\item\em instance of \mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Staff Manager class. 
+
+This class allows you to create instances of a staff and has several funtions to be able to manuplulate the data, such as getters, setters and deletes
+
+\begin{DoxyAuthor}{Author}
+Kajal Patel 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 31, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_staff_manager_a263f32c971943ce51a499797c0017d17}\label{class_staff_manager_a263f32c971943ce51a499797c0017d17}} 
+\index{StaffManager@{StaffManager}!StaffManager@{StaffManager}}
+\index{StaffManager@{StaffManager}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{StaffManager()}{StaffManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Staff\+Manager\+::\+Staff\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+copy constructor overridden 
+
+By setting these private it prevents copying and assignment to other class as they should not be accessing this
+
+Prevents copying or sharing but reducing these to nothing and not adding any info or an instance to be able to work with it \mbox{\Hypertarget{class_staff_manager_a8263a32fff9cee5d8bdf42eeb00190c7}\label{class_staff_manager_a8263a32fff9cee5d8bdf42eeb00190c7}} 
+\index{StaffManager@{StaffManager}!StaffManager@{StaffManager}}
+\index{StaffManager@{StaffManager}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{StaffManager()}{StaffManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Staff\+Manager\+::\+Staff\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Protected Staff Manager constructor This is a singleton implementation (protected constructor) used to clear an instance of the staff manager, removes all inside ~\newline
+ 
+
+Prevents instantiation of the of the inventory manager by making a protected class \mbox{\Hypertarget{class_staff_manager_a9f66df705b1fa42a8395d0f8fa31b808}\label{class_staff_manager_a9f66df705b1fa42a8395d0f8fa31b808}} 
+\index{StaffManager@{StaffManager}!````~StaffManager@{$\sim$StaffManager}}
+\index{````~StaffManager@{$\sim$StaffManager}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$StaffManager()}{~StaffManager()}}
+{\footnotesize\ttfamily Staff\+Manager\+::$\sim$\+Staff\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Staff manager destructor When the staff manager is no longer required this destructs the instance and clears the items. 
+
+This is a virtual method that is meant to be a destructor of an instance that is no longer required 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_staff_manager_a8e2f3c95646b20f7f7f2f6f35da0868b}\label{class_staff_manager_a8e2f3c95646b20f7f7f2f6f35da0868b}} 
+\index{StaffManager@{StaffManager}!addStaff@{addStaff}}
+\index{addStaff@{addStaff}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{addStaff()}{addStaff()}}
+{\footnotesize\ttfamily int Staff\+Manager\+::add\+Staff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}}}]{new\+User }\end{DoxyParamCaption})}
+
+
+
+Add staff member method Tries to add a staff member to the list of all staff, if the name already exists in the list then it comments saying you should remove the old one before adding a new item with the matching name. 
+
+additional methods to help maintain the data structure
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_user}{User}}} & new user to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staff_manager_a6ee3e42271c89043133fa39daff63743}\label{class_staff_manager_a6ee3e42271c89043133fa39daff63743}} 
+\index{StaffManager@{StaffManager}!getEmployees@{getEmployees}}
+\index{getEmployees@{getEmployees}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{getEmployees()}{getEmployees()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ Staff\+Manager\+::get\+Employees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Employees getter method Has a list of employees and if their Utype is a employee then push back into employee using the parameter of staff location. 
+
+\begin{DoxyReturn}{Returns}
+vector set of employees 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staff_manager_a15b554a55f275a65d9bf6a103a01a753}\label{class_staff_manager_a15b554a55f275a65d9bf6a103a01a753}} 
+\index{StaffManager@{StaffManager}!getManagers@{getManagers}}
+\index{getManagers@{getManagers}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{getManagers()}{getManagers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ Staff\+Manager\+::get\+Managers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Managers getter method Has a list of managers and if their Utype is a manager then push back into manager using the parameter of staff location. 
+
+\begin{DoxyReturn}{Returns}
+vector set of managers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staff_manager_af933f127fbb823a1a2147ef94bd5bb1b}\label{class_staff_manager_af933f127fbb823a1a2147ef94bd5bb1b}} 
+\index{StaffManager@{StaffManager}!getStaff@{getStaff}}
+\index{getStaff@{getStaff}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{getStaff()}{getStaff()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ Staff\+Manager\+::get\+Staff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Staff getter method This returns the set of members which are in the current Staff. 
+
+getter methods
+
+\begin{DoxyReturn}{Returns}
+vector set of staff members 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staff_manager_a08401a4ced090616a0f3fe2d67ebd8df}\label{class_staff_manager_a08401a4ced090616a0f3fe2d67ebd8df}} 
+\index{StaffManager@{StaffManager}!instance@{instance}}
+\index{instance@{instance}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} \& Staff\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Instance creator If the staff manager doesnt exist then it creates a new instance of the staff manager then returns such instance in the form of a pointer. 
+
+There is no public constructor (singleton) but instead an instance method to get the singleton object
+
+\begin{DoxyReturn}{Returns}
+pointer of instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staff_manager_a963ea2d946a0738f5f1019527733c4e3}\label{class_staff_manager_a963ea2d946a0738f5f1019527733c4e3}} 
+\index{StaffManager@{StaffManager}!operator=@{operator=}}
+\index{operator=@{operator=}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} \& Staff\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_staff_manager}{Staff\+Manager}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+copy constructor overridden 
+
+Prevents copying or sharing but reducing these to nothing and not adding any info or an instance to be able to work with it \mbox{\Hypertarget{class_staff_manager_afa2541ca8ef7d2486fdf54fc35fcc454}\label{class_staff_manager_afa2541ca8ef7d2486fdf54fc35fcc454}} 
+\index{StaffManager@{StaffManager}!printStaff@{printStaff}}
+\index{printStaff@{printStaff}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{printStaff()}{printStaff()}}
+{\footnotesize\ttfamily void Staff\+Manager\+::print\+Staff (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$}]{staff\+Members }\end{DoxyParamCaption})}
+
+
+
+Print given staff method For this list of staff members it will loop through and call the print username on each staff. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & of staff members \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staff_manager_ad26a3812b3f3df303e68dcd1203140bd}\label{class_staff_manager_ad26a3812b3f3df303e68dcd1203140bd}} 
+\index{StaffManager@{StaffManager}!printUser@{printUser}}
+\index{printUser@{printUser}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{printUser()}{printUser()}}
+{\footnotesize\ttfamily void Staff\+Manager\+::print\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Print user method This takes a singular staff ID and looks through the whole list until it finds it then displays all attributes to the screen, returns nothing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & user id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staff_manager_ad8bb099f847bb495636334771d916ba2}\label{class_staff_manager_ad8bb099f847bb495636334771d916ba2}} 
+\index{StaffManager@{StaffManager}!removeStaff@{removeStaff}}
+\index{removeStaff@{removeStaff}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{removeStaff()}{removeStaff()}}
+{\footnotesize\ttfamily int Staff\+Manager\+::remove\+Staff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}}}]{curr\+User }\end{DoxyParamCaption})}
+
+
+
+Remove staff member method This method tries to remove a staff member by extracting its name then calling the remove by name method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_user}{User}}} & new user to remove \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_staff_manager_a1623f72714bfbca90352ec81f8279b45}\label{class_staff_manager_a1623f72714bfbca90352ec81f8279b45}} 
+\index{StaffManager@{StaffManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} $\ast$ Staff\+Manager\+::\+\_\+instance =N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+instance of \mbox{\hyperlink{class_staff_manager}{Staff\+Manager}} 
+
+The class only allows one instance of the inventory manager
+
+This is a singleton object with the instance set to N\+U\+LL \mbox{\Hypertarget{class_staff_manager_a1d199122ed66c6327513c18df1e2e8c3}\label{class_staff_manager_a1d199122ed66c6327513c18df1e2e8c3}} 
+\index{StaffManager@{StaffManager}!staff@{staff}}
+\index{staff@{staff}!StaffManager@{StaffManager}}
+\doxysubsubsection{\texorpdfstring{staff}{staff}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_user}{User}}$>$ Staff\+Manager\+::staff\hspace{0.3cm}{\ttfamily [private]}}
+
+The class allows one menu list per instance manager reference 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Staff\+Manager.\+h\item 
+Staff\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{class_promo_loader}{}\doxysection{Promo\+Loader Class Reference}
+\label{class_promo_loader}\index{PromoLoader@{PromoLoader}}
+
+
+Promo Loader class.  
+
+
+
+
+{\ttfamily \#include $<$Promo\+Loader.\+h$>$}
+
+Inheritance diagram for Promo\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_promo_loader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_promo_loader_adff05e1794dfd9e3c9910c13e68afc53}{Promo\+Loader}} (std \+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em Promo loader class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_promo_loader_a02cbbf0e761e510d761884ee07d1f6cc}{add\+New\+Promo}} (std\+::string coupon\+\_\+code, double discount)
+\begin{DoxyCompactList}\small\item\em Add new promo method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Promo Loader class. 
+
+The constructor reads in from the input filestream with the parameters being the file\+Name then opens the file and reads in various pieces of information to help understand. Next line by line in loop reads in from the file and adds it to the array where it can be used later Then the array is used to send to addnewpromo where it can be added Finally all items read in are printed then the file is closed \begin{DoxyAuthor}{Author}
+Kyra Hinnegan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 22, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_promo_loader_adff05e1794dfd9e3c9910c13e68afc53}\label{class_promo_loader_adff05e1794dfd9e3c9910c13e68afc53}} 
+\index{PromoLoader@{PromoLoader}!PromoLoader@{PromoLoader}}
+\index{PromoLoader@{PromoLoader}!PromoLoader@{PromoLoader}}
+\doxysubsubsection{\texorpdfstring{PromoLoader()}{PromoLoader()}}
+{\footnotesize\ttfamily Promo\+Loader\+::\+Promo\+Loader (\begin{DoxyParamCaption}\item[{std \+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Promo loader class. 
+
+The constructor reads in from the input filestream with the parameters being the file\+Name then opens the file and reads in various pieces of information to help understand. next line by line in loop reads in from the file and adds it to the array where it can be used later Then the array is used to send to addnewpromo where it can be added finally all items read in are printed then the file is closed \begin{DoxyAuthor}{Author}
+Kyra Hinnegan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 22, 2019
+\end{DoxyDate}
+Promo loader constructor
+
+Reads in a file to load it\textquotesingle{}s items as described above 
+\begin{DoxyParams}{Parameters}
+{\em string} & file name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_promo_loader_a02cbbf0e761e510d761884ee07d1f6cc}\label{class_promo_loader_a02cbbf0e761e510d761884ee07d1f6cc}} 
+\index{PromoLoader@{PromoLoader}!addNewPromo@{addNewPromo}}
+\index{addNewPromo@{addNewPromo}!PromoLoader@{PromoLoader}}
+\doxysubsubsection{\texorpdfstring{addNewPromo()}{addNewPromo()}}
+{\footnotesize\ttfamily void Promo\+Loader\+::add\+New\+Promo (\begin{DoxyParamCaption}\item[{std\+::string}]{code,  }\item[{double}]{discount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Add new promo method. 
+
+Add new promo method for the creation of a new promo to be added to the list
+
+Method for the addition of individual promos to the set This is where the information of the array is sent, where it will be used to create a new promo 
+\begin{DoxyParams}{Parameters}
+{\em string} & promo code \\
+\hline
+{\em double} & discount amount \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Promo\+Loader.\+h\item 
+Promo\+Loader.\+cpp\end{DoxyCompactItemize}

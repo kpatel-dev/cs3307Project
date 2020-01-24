@@ -1,0 +1,310 @@
+\hypertarget{class_stock_manager}{}\doxysection{Stock\+Manager Class Reference}
+\label{class_stock_manager}\index{StockManager@{StockManager}}
+
+
+Stock Manager class.  
+
+
+
+
+{\ttfamily \#include $<$Stock\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_stock_manager_a9af819dc7eb94b150f91b558315f05d0}{$\sim$\+Stock\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_stock_manager_abd3837ff612888fa4c1e09298a6b7705}{add\+Stock}} (std\+::string item\+Name, int increase\+By)
+\begin{DoxyCompactList}\small\item\em Method to add additional stock. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_stock_manager_ade2c4f1a8e33f41eeb96e97d6776bf10}{remove\+Stock}} (std\+::string item\+Name, int decrease\+By)
+\begin{DoxyCompactList}\small\item\em Method to remove stock. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_stock_manager_a4f19e8424916f979977a73196f8ed334}{is\+In\+Stock}} (std\+::string item\+Name)
+\begin{DoxyCompactList}\small\item\em Check if an item is in stock. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_stock_manager_a4ff7fbae5fa8190695073fa1f3b9ff90}{is\+Below\+Threshold}} (std\+::string item\+Name)
+\begin{DoxyCompactList}\small\item\em Check if an item is below its minimum threshold. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ \mbox{\hyperlink{class_stock_manager_ac516e20a0d57c055f92ae50e87d25aa0}{get\+List\+Of\+Items\+In\+Stock}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of items in stock. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ \mbox{\hyperlink{class_stock_manager_aa196ae2fb3f6e2a69fb8aaf364699e11}{get\+List\+Of\+Items\+Out\+Of\+Stock}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of items out of stock. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ \mbox{\hyperlink{class_stock_manager_aead889f6d01881942b185a6ce1999ffb}{get\+List\+Of\+Items\+Below\+Threshold}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of items below the minimum threshold. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stock_manager_a2577a1df039b43fc79b17383f5aff179}{print\+Items\+In\+Stock}} ()
+\begin{DoxyCompactList}\small\item\em Print in stock items. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stock_manager_aa0918bcdbdf00b09a03ffcfeeb3329ad}{print\+Items\+Out\+Of\+Stock}} ()
+\begin{DoxyCompactList}\small\item\em Print out of stock items. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stock_manager_a032dcce97aa5a7475c509c9d229d0076}{print\+Items\+Below\+Threshold}} ()
+\begin{DoxyCompactList}\small\item\em Print the items below threshold. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} \& \mbox{\hyperlink{class_stock_manager_aa06017158e166f50ab68bfbd2263783a}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves instance of \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stock_manager_a8341f33af37f04efd210bf418fbe31da}{Stock\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stock_manager_a5d30bedb10a2f72dacfb22edaaa6170a}{Stock\+Manager}} (\mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor overriden. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} \& \mbox{\hyperlink{class_stock_manager_acb715165e422c4755bcfd9239de245a7}{operator=}} (\mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} other)
+\begin{DoxyCompactList}\small\item\em The equals operator overriden. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} $\ast$ \mbox{\hyperlink{class_stock_manager_a4c80d4b7a47f97bc6cbd5866f2b94e80}{\+\_\+instance}} =N\+U\+LL
+\begin{DoxyCompactList}\small\item\em instance of Stock\+Manger \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stock Manager class. 
+
+This class is used to manage the stock of the inventory, meaning the actually quantity of an item available in the store. \begin{DoxyAuthor}{Author}
+Kajal Patel 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 27, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stock_manager_a5d30bedb10a2f72dacfb22edaaa6170a}\label{class_stock_manager_a5d30bedb10a2f72dacfb22edaaa6170a}} 
+\index{StockManager@{StockManager}!StockManager@{StockManager}}
+\index{StockManager@{StockManager}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{StockManager()}{StockManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Stock\+Manager\+::\+Stock\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy constructor overriden. 
+
+Since this is a singleton class, the object cannot be copied. 
+\begin{DoxyParams}{Parameters}
+{\em other} & the other \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} object that should be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} object created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_manager_a8341f33af37f04efd210bf418fbe31da}\label{class_stock_manager_a8341f33af37f04efd210bf418fbe31da}} 
+\index{StockManager@{StockManager}!StockManager@{StockManager}}
+\index{StockManager@{StockManager}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{StockManager()}{StockManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Stock\+Manager\+::\+Stock\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The constructor. 
+
+Since this is a singleton class, the constructor cannot be called outside of the class. \mbox{\Hypertarget{class_stock_manager_a9af819dc7eb94b150f91b558315f05d0}\label{class_stock_manager_a9af819dc7eb94b150f91b558315f05d0}} 
+\index{StockManager@{StockManager}!````~StockManager@{$\sim$StockManager}}
+\index{````~StockManager@{$\sim$StockManager}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$StockManager()}{~StockManager()}}
+{\footnotesize\ttfamily Stock\+Manager\+::$\sim$\+Stock\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} destructor. 
+
+Overrides the default destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stock_manager_abd3837ff612888fa4c1e09298a6b7705}\label{class_stock_manager_abd3837ff612888fa4c1e09298a6b7705}} 
+\index{StockManager@{StockManager}!addStock@{addStock}}
+\index{addStock@{addStock}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{addStock()}{addStock()}}
+{\footnotesize\ttfamily int Stock\+Manager\+::add\+Stock (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name,  }\item[{int}]{increase\+By }\end{DoxyParamCaption})}
+
+
+
+Method to add additional stock. 
+
+Increases the quantity of an item that is present in the inventory by a given amount. 
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & the name of the inventory item \\
+\hline
+{\em increase\+By} & the quantity to increase the stock by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the new quantity of the stock available or return -\/1 with the update was unsuccessful and the inventory could not be added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_manager_aead889f6d01881942b185a6ce1999ffb}\label{class_stock_manager_aead889f6d01881942b185a6ce1999ffb}} 
+\index{StockManager@{StockManager}!getListOfItemsBelowThreshold@{getListOfItemsBelowThreshold}}
+\index{getListOfItemsBelowThreshold@{getListOfItemsBelowThreshold}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{getListOfItemsBelowThreshold()}{getListOfItemsBelowThreshold()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ Stock\+Manager\+::get\+List\+Of\+Items\+Below\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a list of items below the minimum threshold. 
+
+Go through all the items in the inventory and find the ones that are below the minimum threshold \begin{DoxyReturn}{Returns}
+return a vector of items that are out of stock 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_manager_ac516e20a0d57c055f92ae50e87d25aa0}\label{class_stock_manager_ac516e20a0d57c055f92ae50e87d25aa0}} 
+\index{StockManager@{StockManager}!getListOfItemsInStock@{getListOfItemsInStock}}
+\index{getListOfItemsInStock@{getListOfItemsInStock}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{getListOfItemsInStock()}{getListOfItemsInStock()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ Stock\+Manager\+::get\+List\+Of\+Items\+In\+Stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a list of items in stock. 
+
+Go through all the items in the inventory and find the ones that are in stock. \begin{DoxyReturn}{Returns}
+return a vector of items that are in stock 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_manager_aa196ae2fb3f6e2a69fb8aaf364699e11}\label{class_stock_manager_aa196ae2fb3f6e2a69fb8aaf364699e11}} 
+\index{StockManager@{StockManager}!getListOfItemsOutOfStock@{getListOfItemsOutOfStock}}
+\index{getListOfItemsOutOfStock@{getListOfItemsOutOfStock}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{getListOfItemsOutOfStock()}{getListOfItemsOutOfStock()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ Stock\+Manager\+::get\+List\+Of\+Items\+Out\+Of\+Stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a list of items out of stock. 
+
+Go through all the items in the inventory and find the ones that are out of stock. \begin{DoxyReturn}{Returns}
+return a vector of items that are out of stock 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_manager_aa06017158e166f50ab68bfbd2263783a}\label{class_stock_manager_aa06017158e166f50ab68bfbd2263783a}} 
+\index{StockManager@{StockManager}!instance@{instance}}
+\index{instance@{instance}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} \& Stock\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieves instance of \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}}. 
+
+Since this is a singleton class, the single instance of the object is returned everytime, or a new one is created if the object does not exist. \begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} singleton instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_manager_a4ff7fbae5fa8190695073fa1f3b9ff90}\label{class_stock_manager_a4ff7fbae5fa8190695073fa1f3b9ff90}} 
+\index{StockManager@{StockManager}!isBelowThreshold@{isBelowThreshold}}
+\index{isBelowThreshold@{isBelowThreshold}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{isBelowThreshold()}{isBelowThreshold()}}
+{\footnotesize\ttfamily bool Stock\+Manager\+::is\+Below\+Threshold (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name }\end{DoxyParamCaption})}
+
+
+
+Check if an item is below its minimum threshold. 
+
+Check if an item\textquotesingle{}s quantity is below its minimum threshold to indicate if it should be re-\/ordered or not. 
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & the name of the inventory item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if the item is below threshold or doesn\textquotesingle{}t exist, return false if it is above the threshold 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_manager_a4f19e8424916f979977a73196f8ed334}\label{class_stock_manager_a4f19e8424916f979977a73196f8ed334}} 
+\index{StockManager@{StockManager}!isInStock@{isInStock}}
+\index{isInStock@{isInStock}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{isInStock()}{isInStock()}}
+{\footnotesize\ttfamily bool Stock\+Manager\+::is\+In\+Stock (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name }\end{DoxyParamCaption})}
+
+
+
+Check if an item is in stock. 
+
+Check if an item is available stock meaning that the quantity is greater than 0. 
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & the name of the inventory item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if the item is in stock, return false if it is not available or the item is invalid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_manager_acb715165e422c4755bcfd9239de245a7}\label{class_stock_manager_acb715165e422c4755bcfd9239de245a7}} 
+\index{StockManager@{StockManager}!operator=@{operator=}}
+\index{operator=@{operator=}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} \& Stock\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stock_manager}{Stock\+Manager}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The equals operator overriden. 
+
+Since this is a singleton class, the object cannot be copied. 
+\begin{DoxyParams}{Parameters}
+{\em other} & the other \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} object that should be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} object created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_manager_a032dcce97aa5a7475c509c9d229d0076}\label{class_stock_manager_a032dcce97aa5a7475c509c9d229d0076}} 
+\index{StockManager@{StockManager}!printItemsBelowThreshold@{printItemsBelowThreshold}}
+\index{printItemsBelowThreshold@{printItemsBelowThreshold}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{printItemsBelowThreshold()}{printItemsBelowThreshold()}}
+{\footnotesize\ttfamily void Stock\+Manager\+::print\+Items\+Below\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print the items below threshold. 
+
+Go through all the items in the inventory and print out the ones that are below the minimum threshold \mbox{\Hypertarget{class_stock_manager_a2577a1df039b43fc79b17383f5aff179}\label{class_stock_manager_a2577a1df039b43fc79b17383f5aff179}} 
+\index{StockManager@{StockManager}!printItemsInStock@{printItemsInStock}}
+\index{printItemsInStock@{printItemsInStock}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{printItemsInStock()}{printItemsInStock()}}
+{\footnotesize\ttfamily void Stock\+Manager\+::print\+Items\+In\+Stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print in stock items. 
+
+Go through all the items in the inventory and print out the ones in stock \mbox{\Hypertarget{class_stock_manager_aa0918bcdbdf00b09a03ffcfeeb3329ad}\label{class_stock_manager_aa0918bcdbdf00b09a03ffcfeeb3329ad}} 
+\index{StockManager@{StockManager}!printItemsOutOfStock@{printItemsOutOfStock}}
+\index{printItemsOutOfStock@{printItemsOutOfStock}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{printItemsOutOfStock()}{printItemsOutOfStock()}}
+{\footnotesize\ttfamily void Stock\+Manager\+::print\+Items\+Out\+Of\+Stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print out of stock items. 
+
+Go through all the items in the inventory and print out the ones out of stock \mbox{\Hypertarget{class_stock_manager_ade2c4f1a8e33f41eeb96e97d6776bf10}\label{class_stock_manager_ade2c4f1a8e33f41eeb96e97d6776bf10}} 
+\index{StockManager@{StockManager}!removeStock@{removeStock}}
+\index{removeStock@{removeStock}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{removeStock()}{removeStock()}}
+{\footnotesize\ttfamily int Stock\+Manager\+::remove\+Stock (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name,  }\item[{int}]{decrease\+By }\end{DoxyParamCaption})}
+
+
+
+Method to remove stock. 
+
+Decreases the quantity of an item that is present in the inventory by a given amount. 
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & the name of the inventory item \\
+\hline
+{\em decrease\+By} & the quantity to decrease the stock by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the new quantity of the stock available or return -\/1 with the update was unsuccessful and the inventory could not be added. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_stock_manager_a4c80d4b7a47f97bc6cbd5866f2b94e80}\label{class_stock_manager_a4c80d4b7a47f97bc6cbd5866f2b94e80}} 
+\index{StockManager@{StockManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!StockManager@{StockManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stock_manager}{Stock\+Manager}} $\ast$ Stock\+Manager\+::\+\_\+instance =N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+instance of Stock\+Manger 
+
+The class only allows one instance of the inventory manager
+
+This is the singleton instance of the stock manager 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Stock\+Manager.\+h\item 
+Stock\+Manager.\+cpp\end{DoxyCompactItemize}

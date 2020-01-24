@@ -1,0 +1,40 @@
+***********************************************************************
+LOADERTEST
+To compile:
+ g++ -o loaderTest User.cpp StaffManager.cpp FileLoader.cpp ItemLoader.cpp UserDataLoader.cpp InventoryManager.cpp Price.cpp MenuItem.cpp
+
+To run:
+./loaderTest 
+
+***********************************************************************
+INVTEST
+To compile:
+g++ -o invTest inventoryTests.cpp MenuItem.cpp Price.cpp InventoryManager.cpp
+
+To run:
+./invTest 
+
+
+***********************************************************************
+USERTEST
+To compile:
+g++ -o userTest userTest.cpp User.cpp StaffManager.cpp
+
+To run:
+./userTest 
+
+**********************************************************************
+STOCKTEST
+To compile:
+g++ -o stockTest stockTest.cpp StockManager.cpp OrderManager.cpp Order.cpp User.cpp StaffManager.cpp FileLoader.cpp ItemLoader.cpp UserDataLoader.cpp InventoryManager.cpp Price.cpp MenuItem.cpp
+To run:
+./stockTest
+
+
+**********************************************************************
+To compile
+ g++ -o main main.cpp StockManager.cpp OrderManager.cpp Order.cpp User.cpp StaffManager.cpp FileLoader.cpp ItemLoader.cpp UserDataLoader.cpp InventoryManager.cpp Price.cpp MenuItem.cpp PromoLoader.cpp Coupon.cpp CouponManager.cpp
+
+To run:
+./main
+

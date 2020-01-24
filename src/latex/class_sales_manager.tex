@@ -1,0 +1,193 @@
+\hypertarget{class_sales_manager}{}\doxysection{Sales\+Manager Class Reference}
+\label{class_sales_manager}\index{SalesManager@{SalesManager}}
+
+
+{\ttfamily \#include $<$Sales\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_sales_manager_a9964413ddbf6cc33d0a3ca4273d606e4}{$\sim$\+Sales\+Manager}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ \mbox{\hyperlink{class_sales_manager_aecdd88afcceb3c08978a3c14fe922dfb}{get\+Sale\+Items}} ()
+\item 
+void \mbox{\hyperlink{class_sales_manager_a134a70326af11981bc29842776f34a53}{print\+All\+Sale\+Items}} ()
+\item 
+void \mbox{\hyperlink{class_sales_manager_a73e6d6bbeca2916318191bc712aa5f76}{print\+Sale\+Item}} (std\+::string item\+Name)
+\item 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$ \mbox{\hyperlink{class_sales_manager_af7578cef1f267ddc658115c974d9682c}{find\+Sale\+Item}} (std\+::string name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sales_manager}{Sales\+Manager}} \& \mbox{\hyperlink{class_sales_manager_a24261467136019f3508a1d229784119e}{instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sales_manager_ac021513ad4cd0c44db45b781468e276e}{Sales\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sales_manager_ade8457be654bc803ffee15360b1ec07d}{print\+Menu\+Item}} (string item\+Name)
+\item 
+\mbox{\hyperlink{class_sales_manager_a5fc16cb0681944e510c45d111e2838b0}{Sales\+Manager}} (\mbox{\hyperlink{class_sales_manager}{Sales\+Manager}} \&other)
+\item 
+\mbox{\hyperlink{class_sales_manager}{Sales\+Manager}} \& \mbox{\hyperlink{class_sales_manager_a5cc42d124c96138200bbb9a6ef383b11}{operator=}} (\mbox{\hyperlink{class_sales_manager}{Sales\+Manager}} other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ \mbox{\hyperlink{class_sales_manager_a64661dc5afd0d85accde5b58899ae759}{items}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sales_manager}{Sales\+Manager}} $\ast$ \mbox{\hyperlink{class_sales_manager_a0df52779797668eea8f62c6483caa998}{\+\_\+instance}} =N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sales manager header file
+
+This class allows you to create instances of a inventory and has several funtions to be able to manuplulate the data, such as getters, setters and deletes 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sales_manager_a5fc16cb0681944e510c45d111e2838b0}\label{class_sales_manager_a5fc16cb0681944e510c45d111e2838b0}} 
+\index{SalesManager@{SalesManager}!SalesManager@{SalesManager}}
+\index{SalesManager@{SalesManager}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{SalesManager()}{SalesManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sales\+Manager\+::\+Sales\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sales_manager}{Sales\+Manager}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+The class allows one menu list per instance manager reference Sales manager constructor By setting these private it prevents copying and assignment to other class as they should not be accessing this 
+\begin{DoxyParams}{Parameters}
+{\em Sales\+Manager\&} & other\\
+\hline
+\end{DoxyParams}
+Sales manager constructor Prevents copying or sharing but reducing these to nothing and not adding any info or an instance to be able to work with it 
+\begin{DoxyParams}{Parameters}
+{\em Sales\+Manager\&} & other \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sales_manager_ac021513ad4cd0c44db45b781468e276e}\label{class_sales_manager_ac021513ad4cd0c44db45b781468e276e}} 
+\index{SalesManager@{SalesManager}!SalesManager@{SalesManager}}
+\index{SalesManager@{SalesManager}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{SalesManager()}{SalesManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sales\+Manager\+::\+Sales\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sales manager protected constructor This is a singleton implementation (protected constructor) used to clear an instance of the \mbox{\hyperlink{class_sales_manager}{Sales\+Manager}}, removes all inside \mbox{\Hypertarget{class_sales_manager_a9964413ddbf6cc33d0a3ca4273d606e4}\label{class_sales_manager_a9964413ddbf6cc33d0a3ca4273d606e4}} 
+\index{SalesManager@{SalesManager}!````~SalesManager@{$\sim$SalesManager}}
+\index{````~SalesManager@{$\sim$SalesManager}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$SalesManager()}{~SalesManager()}}
+{\footnotesize\ttfamily Sales\+Manager\+::$\sim$\+Sales\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sales manager destructor This is a virtual method that is meant to be a destructor of an instance that is no longer required
+
+Sales manager destructor When the Sales manager is no longer required this destructs the instance and clears the items 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sales_manager_af7578cef1f267ddc658115c974d9682c}\label{class_sales_manager_af7578cef1f267ddc658115c974d9682c}} 
+\index{SalesManager@{SalesManager}!findSaleItem@{findSaleItem}}
+\index{findSaleItem@{findSaleItem}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{findSaleItem()}{findSaleItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$ Sales\+Manager\+::find\+Sale\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+Find menu item method This method tries to locate an item by matching the name from the list of menu items, if the name does not exist in the list then it comments saying that the item was not found 
+\begin{DoxyParams}{Parameters}
+{\em string} & item name to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} object found from list of menu items 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sales_manager_aecdd88afcceb3c08978a3c14fe922dfb}\label{class_sales_manager_aecdd88afcceb3c08978a3c14fe922dfb}} 
+\index{SalesManager@{SalesManager}!getSaleItems@{getSaleItems}}
+\index{getSaleItems@{getSaleItems}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{getSaleItems()}{getSaleItems()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ Sales\+Manager\+::get\+Sale\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu items getter method This is a get method that gets the set of menu items and returns them \begin{DoxyReturn}{Returns}
+vector set of menu items
+\end{DoxyReturn}
+Inventory getter method This returns the set of items which are in the current inventory \begin{DoxyReturn}{Returns}
+vector set of items 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sales_manager_a24261467136019f3508a1d229784119e}\label{class_sales_manager_a24261467136019f3508a1d229784119e}} 
+\index{SalesManager@{SalesManager}!instance@{instance}}
+\index{instance@{instance}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sales_manager}{Sales\+Manager}} \& Sales\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Prevents instantiation of the of the Sales manager by making a protected class Instance method There is no public constructor (singleton) but instead an instance method to get the singleton object
+
+Sales manager constructor If the Sales manager doesnt exist then it creates a new instance of the Sales manager then returns such instance in the form of a pointer \begin{DoxyReturn}{Returns}
+a pointer to the instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sales_manager_a5cc42d124c96138200bbb9a6ef383b11}\label{class_sales_manager_a5cc42d124c96138200bbb9a6ef383b11}} 
+\index{SalesManager@{SalesManager}!operator=@{operator=}}
+\index{operator=@{operator=}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sales_manager}{Sales\+Manager}} \& Sales\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sales_manager}{Sales\+Manager}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Sales manager constructor By setting these private it prevents copying and assignment to other class as they should not be accessing this 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_sales_manager}{Sales\+Manager}}} & other\\
+\hline
+\end{DoxyParams}
+Sales manager constructor Prevents copying or sharing but reducing these to nothing and not adding any info or an instance to be able to work with it 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_sales_manager}{Sales\+Manager}}} & other \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sales_manager_a134a70326af11981bc29842776f34a53}\label{class_sales_manager_a134a70326af11981bc29842776f34a53}} 
+\index{SalesManager@{SalesManager}!printAllSaleItems@{printAllSaleItems}}
+\index{printAllSaleItems@{printAllSaleItems}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{printAllSaleItems()}{printAllSaleItems()}}
+{\footnotesize\ttfamily void Sales\+Manager\+::print\+All\+Sale\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here are some additional methods to help maintain the data structure
+
+Print menu items method Takes the full list of all menu items and for that size loops through sending each line to the other print menu item where it does a job of printing off all information about the one object given to it \mbox{\Hypertarget{class_sales_manager_ade8457be654bc803ffee15360b1ec07d}\label{class_sales_manager_ade8457be654bc803ffee15360b1ec07d}} 
+\index{SalesManager@{SalesManager}!printMenuItem@{printMenuItem}}
+\index{printMenuItem@{printMenuItem}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{printMenuItem()}{printMenuItem()}}
+{\footnotesize\ttfamily void Sales\+Manager\+::print\+Menu\+Item (\begin{DoxyParamCaption}\item[{string}]{item\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Print detailed list of menu items that are on sale method For each item given to it, goes and searches through the list until it finds the first matching name then prints out all attributes in relation to that item 
+\begin{DoxyParams}{Parameters}
+{\em string} & inventory item name \\
+\hline
+\end{DoxyParams}
+if it can not find the item then just prints it cant find it\mbox{\Hypertarget{class_sales_manager_a73e6d6bbeca2916318191bc712aa5f76}\label{class_sales_manager_a73e6d6bbeca2916318191bc712aa5f76}} 
+\index{SalesManager@{SalesManager}!printSaleItem@{printSaleItem}}
+\index{printSaleItem@{printSaleItem}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{printSaleItem()}{printSaleItem()}}
+{\footnotesize\ttfamily void Sales\+Manager\+::print\+Sale\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name }\end{DoxyParamCaption})}
+
+Print detailed list of menu items that are on sale method For each item given to it, goes and searches through the list until it finds the first matching name then prints out all attributes in relation to that item 
+\begin{DoxyParams}{Parameters}
+{\em string} & inventory item name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sales_manager_a0df52779797668eea8f62c6483caa998}\label{class_sales_manager_a0df52779797668eea8f62c6483caa998}} 
+\index{SalesManager@{SalesManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sales_manager}{Sales\+Manager}} $\ast$ Sales\+Manager\+::\+\_\+instance =N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Sales manager instance Starts a instance as N\+U\+LL allowing it to be start getting written to \mbox{\Hypertarget{class_sales_manager_a64661dc5afd0d85accde5b58899ae759}\label{class_sales_manager_a64661dc5afd0d85accde5b58899ae759}} 
+\index{SalesManager@{SalesManager}!items@{items}}
+\index{items@{items}!SalesManager@{SalesManager}}
+\doxysubsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_menu_item}{Menu\+Item}}$>$ Sales\+Manager\+::items\hspace{0.3cm}{\ttfamily [private]}}
+
+The class only allows one instance of the Sales manager 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sales\+Manager.\+h\item 
+Sales\+Manager.\+cpp\end{DoxyCompactItemize}

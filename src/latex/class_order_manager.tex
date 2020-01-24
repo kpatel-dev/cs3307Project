@@ -1,0 +1,388 @@
+\hypertarget{class_order_manager}{}\doxysection{Order\+Manager Class Reference}
+\label{class_order_manager}\index{OrderManager@{OrderManager}}
+
+
+\mbox{\hyperlink{class_order}{Order}} Manager class.  
+
+
+
+
+{\ttfamily \#include $<$Order\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_order_manager_a279292d3abda9718bbf909d7c85ad055}{$\sim$\+Order\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_order_manager}{Order\+Manager}} destructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ \mbox{\hyperlink{class_order_manager_a3164a04c5748d7d0c1f76733cd59ed7e}{get\+Orders\+Pending}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves list of pending orders. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ \mbox{\hyperlink{class_order_manager_a84705b01c538324727a6e8225d4ef514}{get\+Orders\+Received}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves list of received orders. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ \mbox{\hyperlink{class_order_manager_add902433bb6fe7cecc92ac015b19abb4}{get\+Orders\+Cancelled}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves list of cancelled orders. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_order_manager_a0ecc4b9b4fdd2c37ea06ba87f571fb10}{create\+Order}} (std\+::string item\+Name, int quantity)
+\begin{DoxyCompactList}\small\item\em Method to create an order. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_order_manager_a0a8bac2d417997fa36d96e76d2e3e2ff}{cancel\+Order}} (int order\+Id)
+\begin{DoxyCompactList}\small\item\em Method to cancel an order. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_order_manager_a018f191317bddd6f22e8b9a705d0cc39}{mark\+Order\+Received}} (int order\+Id)
+\begin{DoxyCompactList}\small\item\em Method to mark an order as received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_order}{Order}} $\ast$ \mbox{\hyperlink{class_order_manager_a29472b82e449b35d4e372ae64d3629e7}{find\+Order\+By\+Id}} (int order\+Id)
+\begin{DoxyCompactList}\small\item\em Method to find a specific order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_order_manager_a328c214a7b0b93c6b8775d44e603e358}{print\+All\+Orders\+Pending}} ()
+\begin{DoxyCompactList}\small\item\em Print pending orders. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_order_manager_a365c4cc1b51b06aed3a028d09ed4b6e5}{print\+All\+Orders\+Received}} ()
+\begin{DoxyCompactList}\small\item\em Print received orders. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_order_manager_af081f81dfc1d756de307d3bbdce37843}{print\+All\+Orders\+Cancelled}} ()
+\begin{DoxyCompactList}\small\item\em Print cancelled orders. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_order_manager_ad9c84f67b92163b8fc9e825f3a1ee53b}{print\+All\+Orders}} ()
+\begin{DoxyCompactList}\small\item\em Print all the order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_order_manager}{Order\+Manager}} \& \mbox{\hyperlink{class_order_manager_aa3143d1a7c4f6bd97e2df495a90d5e9f}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves instance of \mbox{\hyperlink{class_order_manager}{Order\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_order_manager_a77db3965911e31246416250711899633}{Order\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_order_manager_a8a8e41e42003ec92989ca12feb448624}{Order\+Manager}} (\mbox{\hyperlink{class_order_manager}{Order\+Manager}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor overriden. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_order_manager}{Order\+Manager}} \& \mbox{\hyperlink{class_order_manager_acd2a72190324e9dbc687a2e5208ce408}{operator=}} (\mbox{\hyperlink{class_order_manager}{Order\+Manager}} other)
+\begin{DoxyCompactList}\small\item\em The equals operator overriden. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_order_manager_afefe6da93326f8f14714caf794f481a3}{print\+Order\+List}} (std\+::vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ order\+List)
+\begin{DoxyCompactList}\small\item\em Print a list of orders. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_order_manager_a11b3537569a3654734eef722bb9a3bf1}{print\+Order}} (\mbox{\hyperlink{class_order}{Order}} order)
+\begin{DoxyCompactList}\small\item\em Print details of a specific item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_order_manager_a06a35ba069b442ca72730c212250a9c1}{total\+Orders}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ \mbox{\hyperlink{class_order_manager_ad5bee5d0c1037334eccd6067ae03213d}{all\+Orders}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ \mbox{\hyperlink{class_order_manager_ae34982cf9b08e04dc0d91d56041d4da6}{orders\+Pending}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ \mbox{\hyperlink{class_order_manager_a92527451c29ec54deba5ea2930b96d03}{orders\+Received}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ \mbox{\hyperlink{class_order_manager_a794d4d9a521732179d857a9fa50afa02}{order\+Cancelled}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_order_manager}{Order\+Manager}} $\ast$ \mbox{\hyperlink{class_order_manager_a207dcaf273b1015964d53839d0e739dc}{\+\_\+instance}} =N\+U\+LL
+\begin{DoxyCompactList}\small\item\em instance of \mbox{\hyperlink{class_order_manager}{Order\+Manager}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_order}{Order}} Manager class. 
+
+This class is used to manage the Orders made to a supplier to re-\/stock the inventory. \begin{DoxyAuthor}{Author}
+Kajal Patel 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 27, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_order_manager_a8a8e41e42003ec92989ca12feb448624}\label{class_order_manager_a8a8e41e42003ec92989ca12feb448624}} 
+\index{OrderManager@{OrderManager}!OrderManager@{OrderManager}}
+\index{OrderManager@{OrderManager}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{OrderManager()}{OrderManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Order\+Manager\+::\+Order\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order_manager}{Order\+Manager}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy constructor overriden. 
+
+Since this is a singleton class, the object cannot be copied. 
+\begin{DoxyParams}{Parameters}
+{\em other} & the other \mbox{\hyperlink{class_order_manager}{Order\+Manager}} object that should be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \mbox{\hyperlink{class_order_manager}{Order\+Manager}} object created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_manager_a77db3965911e31246416250711899633}\label{class_order_manager_a77db3965911e31246416250711899633}} 
+\index{OrderManager@{OrderManager}!OrderManager@{OrderManager}}
+\index{OrderManager@{OrderManager}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{OrderManager()}{OrderManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Order\+Manager\+::\+Order\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The constructor. 
+
+Since this is a singleton class, the constructor cannot be called outside of the class. \mbox{\Hypertarget{class_order_manager_a279292d3abda9718bbf909d7c85ad055}\label{class_order_manager_a279292d3abda9718bbf909d7c85ad055}} 
+\index{OrderManager@{OrderManager}!````~OrderManager@{$\sim$OrderManager}}
+\index{````~OrderManager@{$\sim$OrderManager}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$OrderManager()}{~OrderManager()}}
+{\footnotesize\ttfamily Order\+Manager\+::$\sim$\+Order\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The \mbox{\hyperlink{class_order_manager}{Order\+Manager}} destructor. 
+
+Overrides the default destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_order_manager_a0a8bac2d417997fa36d96e76d2e3e2ff}\label{class_order_manager_a0a8bac2d417997fa36d96e76d2e3e2ff}} 
+\index{OrderManager@{OrderManager}!cancelOrder@{cancelOrder}}
+\index{cancelOrder@{cancelOrder}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{cancelOrder()}{cancelOrder()}}
+{\footnotesize\ttfamily int Order\+Manager\+::cancel\+Order (\begin{DoxyParamCaption}\item[{int}]{order\+Id }\end{DoxyParamCaption})}
+
+
+
+Method to cancel an order. 
+
+Cancel an order that was previously created 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & the order\+Id of the item thats to be cancelled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the order id of the order or return -\/1 if the order cancellation was not successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_manager_a0ecc4b9b4fdd2c37ea06ba87f571fb10}\label{class_order_manager_a0ecc4b9b4fdd2c37ea06ba87f571fb10}} 
+\index{OrderManager@{OrderManager}!createOrder@{createOrder}}
+\index{createOrder@{createOrder}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{createOrder()}{createOrder()}}
+{\footnotesize\ttfamily int Order\+Manager\+::create\+Order (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Method to create an order. 
+
+Creates new order for an item that is in the inventory for a set quantity 
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & the name of the inventory item \\
+\hline
+{\em quantity} & the quantity to order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the order id of the order or return -\/1 if the order creation was not successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_manager_a29472b82e449b35d4e372ae64d3629e7}\label{class_order_manager_a29472b82e449b35d4e372ae64d3629e7}} 
+\index{OrderManager@{OrderManager}!findOrderById@{findOrderById}}
+\index{findOrderById@{findOrderById}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{findOrderById()}{findOrderById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_order}{Order}} $\ast$ Order\+Manager\+::find\+Order\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{order\+Id }\end{DoxyParamCaption})}
+
+
+
+Method to find a specific order. 
+
+Finds and returns an order object based on the order id 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & the order\+Id of the order thats to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the order object on success or an invalid order object (with id -\/1) if unsuccessful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_manager_add902433bb6fe7cecc92ac015b19abb4}\label{class_order_manager_add902433bb6fe7cecc92ac015b19abb4}} 
+\index{OrderManager@{OrderManager}!getOrdersCancelled@{getOrdersCancelled}}
+\index{getOrdersCancelled@{getOrdersCancelled}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{getOrdersCancelled()}{getOrdersCancelled()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ Order\+Manager\+::get\+Orders\+Cancelled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves list of cancelled orders. 
+
+Retrieve the vector list of all the orders that are cancelled \mbox{\Hypertarget{class_order_manager_a3164a04c5748d7d0c1f76733cd59ed7e}\label{class_order_manager_a3164a04c5748d7d0c1f76733cd59ed7e}} 
+\index{OrderManager@{OrderManager}!getOrdersPending@{getOrdersPending}}
+\index{getOrdersPending@{getOrdersPending}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{getOrdersPending()}{getOrdersPending()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ Order\+Manager\+::get\+Orders\+Pending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves list of pending orders. 
+
+Retrieve the vector list of all the orders that are still pending \mbox{\Hypertarget{class_order_manager_a84705b01c538324727a6e8225d4ef514}\label{class_order_manager_a84705b01c538324727a6e8225d4ef514}} 
+\index{OrderManager@{OrderManager}!getOrdersReceived@{getOrdersReceived}}
+\index{getOrdersReceived@{getOrdersReceived}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{getOrdersReceived()}{getOrdersReceived()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$ Order\+Manager\+::get\+Orders\+Received (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves list of received orders. 
+
+Retrieve the vector list of all the orders that are received \mbox{\Hypertarget{class_order_manager_aa3143d1a7c4f6bd97e2df495a90d5e9f}\label{class_order_manager_aa3143d1a7c4f6bd97e2df495a90d5e9f}} 
+\index{OrderManager@{OrderManager}!instance@{instance}}
+\index{instance@{instance}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_order_manager}{Order\+Manager}} \& Order\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieves instance of \mbox{\hyperlink{class_order_manager}{Order\+Manager}}. 
+
+Since this is a singleton class, the single instance of the object is returned everytime, or a new one is created if the object does not exist. \begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{class_order_manager}{Order\+Manager}} singleton instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_manager_a018f191317bddd6f22e8b9a705d0cc39}\label{class_order_manager_a018f191317bddd6f22e8b9a705d0cc39}} 
+\index{OrderManager@{OrderManager}!markOrderReceived@{markOrderReceived}}
+\index{markOrderReceived@{markOrderReceived}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{markOrderReceived()}{markOrderReceived()}}
+{\footnotesize\ttfamily int Order\+Manager\+::mark\+Order\+Received (\begin{DoxyParamCaption}\item[{int}]{order\+Id }\end{DoxyParamCaption})}
+
+
+
+Method to mark an order as received. 
+
+Mark an order received that was previously created 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & the order\+Id of the item thats to be marked as received \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the order id of the order or return -\/1 if the order marking was not successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_manager_acd2a72190324e9dbc687a2e5208ce408}\label{class_order_manager_acd2a72190324e9dbc687a2e5208ce408}} 
+\index{OrderManager@{OrderManager}!operator=@{operator=}}
+\index{operator=@{operator=}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_order_manager}{Order\+Manager}} \& Order\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order_manager}{Order\+Manager}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The equals operator overriden. 
+
+Since this is a singleton class, the object cannot be copied. 
+\begin{DoxyParams}{Parameters}
+{\em other} & the other \mbox{\hyperlink{class_order_manager}{Order\+Manager}} object that should be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \mbox{\hyperlink{class_order_manager}{Order\+Manager}} object created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_manager_ad9c84f67b92163b8fc9e825f3a1ee53b}\label{class_order_manager_ad9c84f67b92163b8fc9e825f3a1ee53b}} 
+\index{OrderManager@{OrderManager}!printAllOrders@{printAllOrders}}
+\index{printAllOrders@{printAllOrders}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{printAllOrders()}{printAllOrders()}}
+{\footnotesize\ttfamily void Order\+Manager\+::print\+All\+Orders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print all the order. 
+
+Go through all the orders and print them out \mbox{\Hypertarget{class_order_manager_af081f81dfc1d756de307d3bbdce37843}\label{class_order_manager_af081f81dfc1d756de307d3bbdce37843}} 
+\index{OrderManager@{OrderManager}!printAllOrdersCancelled@{printAllOrdersCancelled}}
+\index{printAllOrdersCancelled@{printAllOrdersCancelled}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{printAllOrdersCancelled()}{printAllOrdersCancelled()}}
+{\footnotesize\ttfamily void Order\+Manager\+::print\+All\+Orders\+Cancelled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print cancelled orders. 
+
+Go through all the orders cancelled and print out them out \mbox{\Hypertarget{class_order_manager_a328c214a7b0b93c6b8775d44e603e358}\label{class_order_manager_a328c214a7b0b93c6b8775d44e603e358}} 
+\index{OrderManager@{OrderManager}!printAllOrdersPending@{printAllOrdersPending}}
+\index{printAllOrdersPending@{printAllOrdersPending}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{printAllOrdersPending()}{printAllOrdersPending()}}
+{\footnotesize\ttfamily void Order\+Manager\+::print\+All\+Orders\+Pending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print pending orders. 
+
+Go through all the orders pending and print out them out \mbox{\Hypertarget{class_order_manager_a365c4cc1b51b06aed3a028d09ed4b6e5}\label{class_order_manager_a365c4cc1b51b06aed3a028d09ed4b6e5}} 
+\index{OrderManager@{OrderManager}!printAllOrdersReceived@{printAllOrdersReceived}}
+\index{printAllOrdersReceived@{printAllOrdersReceived}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{printAllOrdersReceived()}{printAllOrdersReceived()}}
+{\footnotesize\ttfamily void Order\+Manager\+::print\+All\+Orders\+Received (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print received orders. 
+
+Go through all the orders received and print out them out \mbox{\Hypertarget{class_order_manager_a11b3537569a3654734eef722bb9a3bf1}\label{class_order_manager_a11b3537569a3654734eef722bb9a3bf1}} 
+\index{OrderManager@{OrderManager}!printOrder@{printOrder}}
+\index{printOrder@{printOrder}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{printOrder()}{printOrder()}}
+{\footnotesize\ttfamily void Order\+Manager\+::print\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}}}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Print details of a specific item. 
+
+Take an \mbox{\hyperlink{class_order}{Order}} object and print its details 
+\begin{DoxyParams}{Parameters}
+{\em order} & the order object thats details should be printed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_order_manager_afefe6da93326f8f14714caf794f481a3}\label{class_order_manager_afefe6da93326f8f14714caf794f481a3}} 
+\index{OrderManager@{OrderManager}!printOrderList@{printOrderList}}
+\index{printOrderList@{printOrderList}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{printOrderList()}{printOrderList()}}
+{\footnotesize\ttfamily void Order\+Manager\+::print\+Order\+List (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_order}{Order}} $>$}]{order\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Print a list of orders. 
+
+Take a list of order and print their details 
+\begin{DoxyParams}{Parameters}
+{\em order\+List} & a vector containing the list of orders to be printed \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_order_manager_a207dcaf273b1015964d53839d0e739dc}\label{class_order_manager_a207dcaf273b1015964d53839d0e739dc}} 
+\index{OrderManager@{OrderManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_order_manager}{Order\+Manager}} $\ast$ Order\+Manager\+::\+\_\+instance =N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+instance of \mbox{\hyperlink{class_order_manager}{Order\+Manager}} 
+
+The class only allows one instance of the order manager
+
+This is the singleton instance of the order manager \mbox{\Hypertarget{class_order_manager_ad5bee5d0c1037334eccd6067ae03213d}\label{class_order_manager_ad5bee5d0c1037334eccd6067ae03213d}} 
+\index{OrderManager@{OrderManager}!allOrders@{allOrders}}
+\index{allOrders@{allOrders}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{allOrders}{allOrders}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_order}{Order}}$>$ Order\+Manager\+::all\+Orders\hspace{0.3cm}{\ttfamily [private]}}
+
+keeps track of all orders \mbox{\Hypertarget{class_order_manager_a794d4d9a521732179d857a9fa50afa02}\label{class_order_manager_a794d4d9a521732179d857a9fa50afa02}} 
+\index{OrderManager@{OrderManager}!orderCancelled@{orderCancelled}}
+\index{orderCancelled@{orderCancelled}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{orderCancelled}{orderCancelled}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_order}{Order}}$>$ Order\+Manager\+::order\+Cancelled\hspace{0.3cm}{\ttfamily [private]}}
+
+keeps tack of orders made and cancelled \mbox{\Hypertarget{class_order_manager_ae34982cf9b08e04dc0d91d56041d4da6}\label{class_order_manager_ae34982cf9b08e04dc0d91d56041d4da6}} 
+\index{OrderManager@{OrderManager}!ordersPending@{ordersPending}}
+\index{ordersPending@{ordersPending}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{ordersPending}{ordersPending}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_order}{Order}}$>$ Order\+Manager\+::orders\+Pending\hspace{0.3cm}{\ttfamily [private]}}
+
+keeps tack of order made and pending \mbox{\Hypertarget{class_order_manager_a92527451c29ec54deba5ea2930b96d03}\label{class_order_manager_a92527451c29ec54deba5ea2930b96d03}} 
+\index{OrderManager@{OrderManager}!ordersReceived@{ordersReceived}}
+\index{ordersReceived@{ordersReceived}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{ordersReceived}{ordersReceived}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_order}{Order}}$>$ Order\+Manager\+::orders\+Received\hspace{0.3cm}{\ttfamily [private]}}
+
+keeps tack of orders made and received \mbox{\Hypertarget{class_order_manager_a06a35ba069b442ca72730c212250a9c1}\label{class_order_manager_a06a35ba069b442ca72730c212250a9c1}} 
+\index{OrderManager@{OrderManager}!totalOrders@{totalOrders}}
+\index{totalOrders@{totalOrders}!OrderManager@{OrderManager}}
+\doxysubsubsection{\texorpdfstring{totalOrders}{totalOrders}}
+{\footnotesize\ttfamily int Order\+Manager\+::total\+Orders\hspace{0.3cm}{\ttfamily [private]}}
+
+Keeps track of the total orders made in order to create order ID\textquotesingle{}s 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Order\+Manager.\+h\item 
+Order\+Manager.\+cpp\end{DoxyCompactItemize}

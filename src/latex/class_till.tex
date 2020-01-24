@@ -1,0 +1,114 @@
+\hypertarget{class_till}{}\doxysection{Till Class Reference}
+\label{class_till}\index{Till@{Till}}
+
+
+{\ttfamily \#include $<$Till.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_till_ae7396256e131fc5d77aefb3bf0048ae4}{Till}} ()
+\item 
+\mbox{\hyperlink{class_till_aaeec0b75698941b865eb6e2b89bd98f7}{Till}} (string id, double cash\+Balance)
+\item 
+\mbox{\hyperlink{class_till_a97fe7d3951b8a9c7269e13bd429b1300}{$\sim$\+Till}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_till_a1a1ee4446e8a435e8c5fa257e338e598}{get\+Id}} ()
+\item 
+double \mbox{\hyperlink{class_till_a4476e2597ab93fb772b54694709e4737}{get\+Cash\+Balance}} ()
+\item 
+void \mbox{\hyperlink{class_till_a09ea785f9b2e6dc5af9db841b8457b92}{set\+Cash\+Balance}} (double cash\+Balance)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_till_a2d62bbe74ecb5f2e1291afc3ecb0c7c8}\label{class_till_a2d62bbe74ecb5f2e1291afc3ecb0c7c8}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_till_ad6b72c70f6209dae73bf433d44954a30}\label{class_till_ad6b72c70f6209dae73bf433d44954a30}} 
+std\+::string {\bfseries id}
+\item 
+\mbox{\Hypertarget{class_till_a2fabf1e7a940b0cddb2ea255f35b9934}\label{class_till_a2fabf1e7a940b0cddb2ea255f35b9934}} 
+double {\bfseries cash\+Balance}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sets the definitions of the functions in terms of arguement length and type 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_till_ae7396256e131fc5d77aefb3bf0048ae4}\label{class_till_ae7396256e131fc5d77aefb3bf0048ae4}} 
+\index{Till@{Till}!Till@{Till}}
+\index{Till@{Till}!Till@{Till}}
+\doxysubsubsection{\texorpdfstring{Till()}{Till()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Till\+::\+Till (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructor to initilize what a menu item is composed of
+
+Menu item constructor \mbox{\Hypertarget{class_till_aaeec0b75698941b865eb6e2b89bd98f7}\label{class_till_aaeec0b75698941b865eb6e2b89bd98f7}} 
+\index{Till@{Till}!Till@{Till}}
+\index{Till@{Till}!Till@{Till}}
+\doxysubsubsection{\texorpdfstring{Till()}{Till()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Till\+::\+Till (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{double}]{cash\+Balance }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_till}{Till}} object parameterized constructor This method is build to create till objects with 2 different attributes Has failsafes such as that if it does not have an ID then it is unable to create an object otherwise will assign all attributes to the object 
+\begin{DoxyParams}{Parameters}
+{\em string} & id of item \\
+\hline
+{\em double} & cash balance of a till ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_till_a97fe7d3951b8a9c7269e13bd429b1300}\label{class_till_a97fe7d3951b8a9c7269e13bd429b1300}} 
+\index{Till@{Till}!````~Till@{$\sim$Till}}
+\index{````~Till@{$\sim$Till}!Till@{Till}}
+\doxysubsubsection{\texorpdfstring{$\sim$Till()}{~Till()}}
+{\footnotesize\ttfamily Till\+::$\sim$\+Till (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destructor method
+
+\mbox{\hyperlink{class_till}{Till}} destructor Destroys the object after it is no longer useful ~\newline
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_till_a4476e2597ab93fb772b54694709e4737}\label{class_till_a4476e2597ab93fb772b54694709e4737}} 
+\index{Till@{Till}!getCashBalance@{getCashBalance}}
+\index{getCashBalance@{getCashBalance}!Till@{Till}}
+\doxysubsubsection{\texorpdfstring{getCashBalance()}{getCashBalance()}}
+{\footnotesize\ttfamily double Till\+::get\+Cash\+Balance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cash balance getter method \begin{DoxyReturn}{Returns}
+double item cash\+Balance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_till_a1a1ee4446e8a435e8c5fa257e338e598}\label{class_till_a1a1ee4446e8a435e8c5fa257e338e598}} 
+\index{Till@{Till}!getId@{getId}}
+\index{getId@{getId}!Till@{Till}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily string Till\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get info methods
+
+ID getter method \begin{DoxyReturn}{Returns}
+string item id ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_till_a09ea785f9b2e6dc5af9db841b8457b92}\label{class_till_a09ea785f9b2e6dc5af9db841b8457b92}} 
+\index{Till@{Till}!setCashBalance@{setCashBalance}}
+\index{setCashBalance@{setCashBalance}!Till@{Till}}
+\doxysubsubsection{\texorpdfstring{setCashBalance()}{setCashBalance()}}
+{\footnotesize\ttfamily void Till\+::set\+Cash\+Balance (\begin{DoxyParamCaption}\item[{double}]{balance }\end{DoxyParamCaption})}
+
+set attribute methods
+
+\mbox{\hyperlink{class_price}{Price}} setter method Set \mbox{\hyperlink{class_price}{Price}}, sets the type indicated to the new value held in the parameter field as long as the price is above 0 
+\begin{DoxyParams}{Parameters}
+{\em double} & new price of item ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Till.\+h\item 
+Till.\+cpp\end{DoxyCompactItemize}

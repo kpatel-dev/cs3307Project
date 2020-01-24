@@ -1,0 +1,225 @@
+\hypertarget{class_order}{}\doxysection{Order Class Reference}
+\label{class_order}\index{Order@{Order}}
+
+
+\mbox{\hyperlink{class_order}{Order}} class.  
+
+
+
+
+{\ttfamily \#include $<$Order.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_order_a7b6a660b03708ed5b4e1c4a6dc2a664a}{Order}} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_order_a53b677b760a9c9481d9f2abe6ca4428b}{Order}} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} item, int \mbox{\hyperlink{class_order_a4cd270b8f0782aaf79befb1c078c7251}{order\+Id}}, int \mbox{\hyperlink{class_order_ad42c2b186d4a28b61beb081e935e7b8c}{quantity}})
+\begin{DoxyCompactList}\small\item\em The constructor for an order object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_order_a8fb25876ccbd534465f5f96ef9bb2212}{$\sim$\+Order}} ()
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_order}{Order}} destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_order_aa5042da754f07b1876aa63615c5f2983}{get\+Order\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves order id of the \mbox{\hyperlink{class_order}{Order}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \mbox{\hyperlink{class_order_aec38fdbb5720d1f0278ad7b7b8061269}{get\+Menu\+Item\+Ordered}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves \mbox{\hyperlink{class_menu_item}{Menu\+Item}} of the \mbox{\hyperlink{class_order}{Order}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_order_a311e094db9f4e330e9c56d1ec465c71f}{is\+Order\+Received}} ()
+\begin{DoxyCompactList}\small\item\em Check if an order is received. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_order_ad534d78f1e60b683e1b623bf0f37c352}{get\+Quantity\+Ordered}} ()
+\begin{DoxyCompactList}\small\item\em Check the quantity of the item ordered. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_order_af6685f3661a4608534ef41d19d72a3c7}{mark\+Order\+Received}} ()
+\begin{DoxyCompactList}\small\item\em Mark an order as received. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_order_aa63c3befcbe3a3e6a5ed097630e32720}{get\+Menu\+Item\+Ordered\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the \mbox{\hyperlink{class_menu_item}{Menu\+Item}} that was ordered. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_order_a1a06c5a6cdb4002648571bee39ab5e12}{get\+Menu\+Item\+Ordered\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_menu_item}{Menu\+Item}} id of the item that was ordered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_order_a4cd270b8f0782aaf79befb1c078c7251}{order\+Id}}
+\item 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \mbox{\hyperlink{class_order_ad526b03f8fcd82fb4771ded0f4020cd4}{item\+Ordered}}
+\item 
+bool \mbox{\hyperlink{class_order_a58c1f03b6a0cbb328767f97af58630b0}{order\+Recieved}}
+\item 
+int \mbox{\hyperlink{class_order_ad42c2b186d4a28b61beb081e935e7b8c}{quantity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_order}{Order}} class. 
+
+This class is used to hold a specific \mbox{\hyperlink{class_order}{Order}}\textquotesingle{}s information \begin{DoxyAuthor}{Author}
+Kajal Patel 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 27, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_order_a7b6a660b03708ed5b4e1c4a6dc2a664a}\label{class_order_a7b6a660b03708ed5b4e1c4a6dc2a664a}} 
+\index{Order@{Order}!Order@{Order}}
+\index{Order@{Order}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{Order()}{Order()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Order\+::\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The default constructor. 
+
+Default constructor will create an invalid order with the id set to -\/1 \mbox{\Hypertarget{class_order_a53b677b760a9c9481d9f2abe6ca4428b}\label{class_order_a53b677b760a9c9481d9f2abe6ca4428b}} 
+\index{Order@{Order}!Order@{Order}}
+\index{Order@{Order}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{Order()}{Order()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Order\+::\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_menu_item}{Menu\+Item}}}]{item,  }\item[{int}]{order\+Id,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+The constructor for an order object. 
+
+Create an order object with an order id, order quantity and the specific item to be ordered. 
+\begin{DoxyParams}{Parameters}
+{\em item} & the \mbox{\hyperlink{class_menu_item}{Menu\+Item}} object to be ordered \\
+\hline
+{\em order\+Id} & the id of the order that it should be set to \\
+\hline
+{\em quantity} & the quantity to be ordered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_order_a8fb25876ccbd534465f5f96ef9bb2212}\label{class_order_a8fb25876ccbd534465f5f96ef9bb2212}} 
+\index{Order@{Order}!````~Order@{$\sim$Order}}
+\index{````~Order@{$\sim$Order}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{$\sim$Order()}{~Order()}}
+{\footnotesize\ttfamily Order\+::$\sim$\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The \mbox{\hyperlink{class_order}{Order}} destructor. 
+
+Overrides the default destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_order_aec38fdbb5720d1f0278ad7b7b8061269}\label{class_order_aec38fdbb5720d1f0278ad7b7b8061269}} 
+\index{Order@{Order}!getMenuItemOrdered@{getMenuItemOrdered}}
+\index{getMenuItemOrdered@{getMenuItemOrdered}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{getMenuItemOrdered()}{getMenuItemOrdered()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menu_item}{Menu\+Item}} Order\+::get\+Menu\+Item\+Ordered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves \mbox{\hyperlink{class_menu_item}{Menu\+Item}} of the \mbox{\hyperlink{class_order}{Order}}. 
+
+Get the \mbox{\hyperlink{class_menu_item}{Menu\+Item}} object of the item that was ordered \begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{class_menu_item}{Menu\+Item}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_a1a06c5a6cdb4002648571bee39ab5e12}\label{class_order_a1a06c5a6cdb4002648571bee39ab5e12}} 
+\index{Order@{Order}!getMenuItemOrderedId@{getMenuItemOrderedId}}
+\index{getMenuItemOrderedId@{getMenuItemOrderedId}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{getMenuItemOrderedId()}{getMenuItemOrderedId()}}
+{\footnotesize\ttfamily string Order\+::get\+Menu\+Item\+Ordered\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_menu_item}{Menu\+Item}} id of the item that was ordered. 
+
+Get the id of the item that was ordered \begin{DoxyReturn}{Returns}
+the id of the item ordered as a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_aa63c3befcbe3a3e6a5ed097630e32720}\label{class_order_aa63c3befcbe3a3e6a5ed097630e32720}} 
+\index{Order@{Order}!getMenuItemOrderedName@{getMenuItemOrderedName}}
+\index{getMenuItemOrderedName@{getMenuItemOrderedName}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{getMenuItemOrderedName()}{getMenuItemOrderedName()}}
+{\footnotesize\ttfamily string Order\+::get\+Menu\+Item\+Ordered\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the \mbox{\hyperlink{class_menu_item}{Menu\+Item}} that was ordered. 
+
+Get the name of the item that was ordered \begin{DoxyReturn}{Returns}
+the name of the item ordered as a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_aa5042da754f07b1876aa63615c5f2983}\label{class_order_aa5042da754f07b1876aa63615c5f2983}} 
+\index{Order@{Order}!getOrderId@{getOrderId}}
+\index{getOrderId@{getOrderId}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{getOrderId()}{getOrderId()}}
+{\footnotesize\ttfamily int Order\+::get\+Order\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves order id of the \mbox{\hyperlink{class_order}{Order}}. 
+
+Get the order id of this \mbox{\hyperlink{class_order}{Order}} object \begin{DoxyReturn}{Returns}
+the order id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_ad534d78f1e60b683e1b623bf0f37c352}\label{class_order_ad534d78f1e60b683e1b623bf0f37c352}} 
+\index{Order@{Order}!getQuantityOrdered@{getQuantityOrdered}}
+\index{getQuantityOrdered@{getQuantityOrdered}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{getQuantityOrdered()}{getQuantityOrdered()}}
+{\footnotesize\ttfamily int Order\+::get\+Quantity\+Ordered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check the quantity of the item ordered. 
+
+Check the total quantity of the item that was ordered \begin{DoxyReturn}{Returns}
+Return the quantity of the order 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_a311e094db9f4e330e9c56d1ec465c71f}\label{class_order_a311e094db9f4e330e9c56d1ec465c71f}} 
+\index{Order@{Order}!isOrderReceived@{isOrderReceived}}
+\index{isOrderReceived@{isOrderReceived}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{isOrderReceived()}{isOrderReceived()}}
+{\footnotesize\ttfamily bool Order\+::is\+Order\+Received (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if an order is received. 
+
+Check if this order has been marked as recieved \begin{DoxyReturn}{Returns}
+Returns true if the order is marked as received, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_order_af6685f3661a4608534ef41d19d72a3c7}\label{class_order_af6685f3661a4608534ef41d19d72a3c7}} 
+\index{Order@{Order}!markOrderReceived@{markOrderReceived}}
+\index{markOrderReceived@{markOrderReceived}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{markOrderReceived()}{markOrderReceived()}}
+{\footnotesize\ttfamily int Order\+::mark\+Order\+Received (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mark an order as received. 
+
+Mark an order as received. \begin{DoxyReturn}{Returns}
+Return 0 if the marking is successful, return -\/1 if it is not successful 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_order_ad526b03f8fcd82fb4771ded0f4020cd4}\label{class_order_ad526b03f8fcd82fb4771ded0f4020cd4}} 
+\index{Order@{Order}!itemOrdered@{itemOrdered}}
+\index{itemOrdered@{itemOrdered}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{itemOrdered}{itemOrdered}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menu_item}{Menu\+Item}} Order\+::item\+Ordered\hspace{0.3cm}{\ttfamily [private]}}
+
+the item that was ordered \mbox{\Hypertarget{class_order_a4cd270b8f0782aaf79befb1c078c7251}\label{class_order_a4cd270b8f0782aaf79befb1c078c7251}} 
+\index{Order@{Order}!orderId@{orderId}}
+\index{orderId@{orderId}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{orderId}{orderId}}
+{\footnotesize\ttfamily int Order\+::order\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+the unique id of the order \mbox{\Hypertarget{class_order_a58c1f03b6a0cbb328767f97af58630b0}\label{class_order_a58c1f03b6a0cbb328767f97af58630b0}} 
+\index{Order@{Order}!orderRecieved@{orderRecieved}}
+\index{orderRecieved@{orderRecieved}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{orderRecieved}{orderRecieved}}
+{\footnotesize\ttfamily bool Order\+::order\+Recieved\hspace{0.3cm}{\ttfamily [private]}}
+
+whether or not the order was received \mbox{\Hypertarget{class_order_ad42c2b186d4a28b61beb081e935e7b8c}\label{class_order_ad42c2b186d4a28b61beb081e935e7b8c}} 
+\index{Order@{Order}!quantity@{quantity}}
+\index{quantity@{quantity}!Order@{Order}}
+\doxysubsubsection{\texorpdfstring{quantity}{quantity}}
+{\footnotesize\ttfamily int Order\+::quantity\hspace{0.3cm}{\ttfamily [private]}}
+
+the total amount that was ordered 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Order.\+h\item 
+Order.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{class_user_data_loader}{}\doxysection{User\+Data\+Loader Class Reference}
+\label{class_user_data_loader}\index{UserDataLoader@{UserDataLoader}}
+
+
+File loader class.  
+
+
+
+
+{\ttfamily \#include $<$User\+Data\+Loader.\+h$>$}
+
+Inheritance diagram for User\+Data\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_user_data_loader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_data_loader_a0c4e471a93f871f6e855f1711ceb8050}{User\+Data\+Loader}} (std \+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em method for the bulk of loading all of the users in a file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_user_data_loader_ab69cbcddc66ac3e22c6ba13a75569274}{add\+User}} (std\+::string id, std\+::string fname, std\+::string lname, std\+::string type, std\+::string password)
+\begin{DoxyCompactList}\small\item\em adduser method for the creation of new user profiles the users are individually added to the set where it will be used to perform authentication and authorization \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File loader class. 
+
+This is the header file for the user data loader class, as its name might suggest it loads users. The constructor reads in from the input filestream with the parameters being the file\+Name then opens the file and reads in various pieces of information to help understand. Next line by line in loop reads in from the file and adds it to the array where it can be used later Then the array is used to send to add\+User where it can be added
+
+\begin{DoxyAuthor}{Author}
+Fahreen Bushra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 30, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_user_data_loader_a0c4e471a93f871f6e855f1711ceb8050}\label{class_user_data_loader_a0c4e471a93f871f6e855f1711ceb8050}} 
+\index{UserDataLoader@{UserDataLoader}!UserDataLoader@{UserDataLoader}}
+\index{UserDataLoader@{UserDataLoader}!UserDataLoader@{UserDataLoader}}
+\doxysubsubsection{\texorpdfstring{UserDataLoader()}{UserDataLoader()}}
+{\footnotesize\ttfamily User\+Data\+Loader\+::\+User\+Data\+Loader (\begin{DoxyParamCaption}\item[{std \+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+method for the bulk of loading all of the users in a file 
+
+\mbox{\hyperlink{class_user}{User}} Data Loader class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & that has a file of user information\\
+\hline
+\end{DoxyParams}
+This is the user data loader class, as its name might suggest it loads user data. The constructor reads in from the input filestream with the parameters being the file\+Name then opens the file and reads in various pieces of information to help understand. Next line by line in loop reads in from the file and adds it to the array where it can be used later Then the array is used to send to add\+User where it can be added
+
+\begin{DoxyAuthor}{Author}
+Fahreen Bushra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 31, 2019
+\end{DoxyDate}
+\mbox{\hyperlink{class_user}{User}} Data Loader constructor
+
+Reads in an input file amd extracts user information as decribed above 
+\begin{DoxyParams}{Parameters}
+{\em string} & name of file to be read \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_data_loader_ab69cbcddc66ac3e22c6ba13a75569274}\label{class_user_data_loader_ab69cbcddc66ac3e22c6ba13a75569274}} 
+\index{UserDataLoader@{UserDataLoader}!addUser@{addUser}}
+\index{addUser@{addUser}!UserDataLoader@{UserDataLoader}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily void User\+Data\+Loader\+::add\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{std\+::string}]{fname,  }\item[{std\+::string}]{lname,  }\item[{std\+::string}]{type,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+adduser method for the creation of new user profiles the users are individually added to the set where it will be used to perform authentication and authorization 
+
+Add user method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & id of the user \\
+\hline
+{\em string} & firstname of user \\
+\hline
+{\em string} & lastname of user \\
+\hline
+{\em string} & type of user \\
+\hline
+{\em string} & password of user\\
+\hline
+\end{DoxyParams}
+Method for the addition of individual users to the set This is where the information of the array is sent, where it will be used to perform authentication and authorization 
+\begin{DoxyParams}{Parameters}
+{\em string} & user id \\
+\hline
+{\em string} & user first name \\
+\hline
+{\em string} & user last name \\
+\hline
+{\em string} & type of user \\
+\hline
+{\em string} & user password \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+User\+Data\+Loader.\+h\item 
+User\+Data\+Loader.\+cpp\end{DoxyCompactItemize}

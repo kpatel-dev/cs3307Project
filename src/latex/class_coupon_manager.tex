@@ -1,0 +1,296 @@
+\hypertarget{class_coupon_manager}{}\doxysection{Coupon\+Manager Class Reference}
+\label{class_coupon_manager}\index{CouponManager@{CouponManager}}
+
+
+\mbox{\hyperlink{class_coupon}{Coupon}} Manager class.  
+
+
+
+
+{\ttfamily \#include $<$Coupon\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_coupon_manager_a8debecdfe79f5b9fbb5b3c1ba5f54cb1}{$\sim$\+Coupon\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_coupon}{Coupon}} Manager destructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_coupon}{Coupon}} $>$ \mbox{\hyperlink{class_coupon_manager_ad1f28c8edc3749e9a4a9079d3861f2ae}{get\+Coupons}} ()
+\begin{DoxyCompactList}\small\item\em returns the list of coupons \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coupon_manager_a43f1e53efd9f32e0c0bfad33a5aa988d}{set\+Coupons}} (std\+::vector$<$ \mbox{\hyperlink{class_coupon}{Coupon}} $>$ coupons)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_coupon}{Coupon}} list setter method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coupon_manager_a2dd0cf5c64337f7d6e933151d0205c7f}{add\+Coupon}} (\mbox{\hyperlink{class_coupon}{Coupon}} coupon)
+\begin{DoxyCompactList}\small\item\em Adds a coupon to the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coupon_manager_a089a282f07904ebed417b31c873799fa}{remove\+Coupon}} (std\+::string coupon\+Code)
+\begin{DoxyCompactList}\small\item\em Removes a \mbox{\hyperlink{class_coupon}{Coupon}} from the list given a code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coupon_manager_a4e3b0e1a5862cc5e92938bac2fe2d01f}{remove\+Coupon}} (\mbox{\hyperlink{class_coupon}{Coupon}} coupon)
+\begin{DoxyCompactList}\small\item\em Removes a \mbox{\hyperlink{class_coupon}{Coupon}} from the list given the \mbox{\hyperlink{class_coupon}{Coupon}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coupon_manager_a9cbab96b241392e10670c6a30754ff56}{print\+All\+Coupons}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_coupon}{Coupon}} printer method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coupon_manager_acab211b764b085f39b8024bb8fb6f946}{print\+Coupon}} (std\+::string coupon\+Code)
+\begin{DoxyCompactList}\small\item\em Individual \mbox{\hyperlink{class_coupon}{Coupon}} item print method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_coupon}{Coupon}} $\ast$ \mbox{\hyperlink{class_coupon_manager_a68a5728826c2a566f45cba9033d59ba4}{find\+Coupon}} (std\+::string coupon\+Code)
+\begin{DoxyCompactList}\small\item\em Find a coupon in the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} \& \mbox{\hyperlink{class_coupon_manager_a566b4e7411b75255d69902780588d7f2}{instance}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_coupon}{Coupon}} Manager instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coupon_manager_a5f5a533ecb489ce67611990afe93ad39}{Coupon\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_coupon}{Coupon}} Manager unparamaterized constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coupon_manager_a0ce1a0e0eda825541dc92cc614329f21}{Coupon\+Manager}} (\mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} \&other)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_coupon}{Coupon}} Manager constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} \& \mbox{\hyperlink{class_coupon_manager_a33520c795ff126c2ba3d8b6daa7cd5aa}{operator=}} (\mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} other)
+\begin{DoxyCompactList}\small\item\em The equals operator overriden. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_coupon}{Coupon}} $>$ \mbox{\hyperlink{class_coupon_manager_a32222fe928b12936caefe6268bd54fba}{list\+Of\+Coupons}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} $\ast$ \mbox{\hyperlink{class_coupon_manager_a2df61637de31507dab51b534c702887f}{\+\_\+instance}} =N\+U\+LL
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_coupon}{Coupon}} Manager class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_coupon}{Coupon}} Manager class. 
+
+This class is used to manage the list of coupons in the system \begin{DoxyAuthor}{Author}
+Kyra Hinnegan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 22, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_coupon_manager_a0ce1a0e0eda825541dc92cc614329f21}\label{class_coupon_manager_a0ce1a0e0eda825541dc92cc614329f21}} 
+\index{CouponManager@{CouponManager}!CouponManager@{CouponManager}}
+\index{CouponManager@{CouponManager}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{CouponManager()}{CouponManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Coupon\+Manager\+::\+Coupon\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_coupon}{Coupon}} Manager constructor. 
+
+Prevents copying or sharing but reducing these to nothing and not adding any info or an instance to be able to work with it 
+\begin{DoxyParams}{Parameters}
+{\em other} & the \mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} object to be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} object that is created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coupon_manager_a5f5a533ecb489ce67611990afe93ad39}\label{class_coupon_manager_a5f5a533ecb489ce67611990afe93ad39}} 
+\index{CouponManager@{CouponManager}!CouponManager@{CouponManager}}
+\index{CouponManager@{CouponManager}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{CouponManager()}{CouponManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Coupon\+Manager\+::\+Coupon\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_coupon}{Coupon}} Manager unparamaterized constructor. 
+
+Resets the current list of coupons in the system \mbox{\Hypertarget{class_coupon_manager_a8debecdfe79f5b9fbb5b3c1ba5f54cb1}\label{class_coupon_manager_a8debecdfe79f5b9fbb5b3c1ba5f54cb1}} 
+\index{CouponManager@{CouponManager}!````~CouponManager@{$\sim$CouponManager}}
+\index{````~CouponManager@{$\sim$CouponManager}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CouponManager()}{~CouponManager()}}
+{\footnotesize\ttfamily Coupon\+Manager\+::$\sim$\+Coupon\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_coupon}{Coupon}} Manager destructor. 
+
+Resets the list of coupons in the system 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_coupon_manager_a2dd0cf5c64337f7d6e933151d0205c7f}\label{class_coupon_manager_a2dd0cf5c64337f7d6e933151d0205c7f}} 
+\index{CouponManager@{CouponManager}!addCoupon@{addCoupon}}
+\index{addCoupon@{addCoupon}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{addCoupon()}{addCoupon()}}
+{\footnotesize\ttfamily void Coupon\+Manager\+::add\+Coupon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coupon}{Coupon}}}]{coupon }\end{DoxyParamCaption})}
+
+
+
+Adds a coupon to the system. 
+
+Adds a given coupon to the system through the \mbox{\hyperlink{class_coupon}{Coupon}} object 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_coupon}{Coupon}}} & coupon to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_coupon_manager_a68a5728826c2a566f45cba9033d59ba4}\label{class_coupon_manager_a68a5728826c2a566f45cba9033d59ba4}} 
+\index{CouponManager@{CouponManager}!findCoupon@{findCoupon}}
+\index{findCoupon@{findCoupon}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{findCoupon()}{findCoupon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coupon}{Coupon}} $\ast$ Coupon\+Manager\+::find\+Coupon (\begin{DoxyParamCaption}\item[{std\+::string}]{coupon\+Code }\end{DoxyParamCaption})}
+
+
+
+Find a coupon in the system. 
+
+Find a specified \mbox{\hyperlink{class_coupon}{Coupon}} in the system given its code 
+\begin{DoxyParams}{Parameters}
+{\em string} & coupon\+Code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Coupon$\ast$ pointer to coupon object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coupon_manager_ad1f28c8edc3749e9a4a9079d3861f2ae}\label{class_coupon_manager_ad1f28c8edc3749e9a4a9079d3861f2ae}} 
+\index{CouponManager@{CouponManager}!getCoupons@{getCoupons}}
+\index{getCoupons@{getCoupons}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{getCoupons()}{getCoupons()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_coupon}{Coupon}} $>$ Coupon\+Manager\+::get\+Coupons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the list of coupons 
+
+Accessor method to retrieve the list of all coupons currently being managed \begin{DoxyReturn}{Returns}
+vector$<$\+Coupon$>$ list\+Of\+Coupons 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coupon_manager_a566b4e7411b75255d69902780588d7f2}\label{class_coupon_manager_a566b4e7411b75255d69902780588d7f2}} 
+\index{CouponManager@{CouponManager}!instance@{instance}}
+\index{instance@{instance}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} \& Coupon\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_coupon}{Coupon}} Manager instance. 
+
+If the coupon manager doesnt exist then it creates a new instance of the coupon manager then returns such instance in the form of a pointer \begin{DoxyReturn}{Returns}
+a pointer to the instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coupon_manager_a33520c795ff126c2ba3d8b6daa7cd5aa}\label{class_coupon_manager_a33520c795ff126c2ba3d8b6daa7cd5aa}} 
+\index{CouponManager@{CouponManager}!operator=@{operator=}}
+\index{operator=@{operator=}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} \& Coupon\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The equals operator overriden. 
+
+Since this is a singleton class, the object cannot be copied. 
+\begin{DoxyParams}{Parameters}
+{\em other} & the other \mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} object that should be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} object created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coupon_manager_a9cbab96b241392e10670c6a30754ff56}\label{class_coupon_manager_a9cbab96b241392e10670c6a30754ff56}} 
+\index{CouponManager@{CouponManager}!printAllCoupons@{printAllCoupons}}
+\index{printAllCoupons@{printAllCoupons}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{printAllCoupons()}{printAllCoupons()}}
+{\footnotesize\ttfamily void Coupon\+Manager\+::print\+All\+Coupons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_coupon}{Coupon}} printer method. 
+
+Prints the list of all coupons in the system \mbox{\Hypertarget{class_coupon_manager_acab211b764b085f39b8024bb8fb6f946}\label{class_coupon_manager_acab211b764b085f39b8024bb8fb6f946}} 
+\index{CouponManager@{CouponManager}!printCoupon@{printCoupon}}
+\index{printCoupon@{printCoupon}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{printCoupon()}{printCoupon()}}
+{\footnotesize\ttfamily void Coupon\+Manager\+::print\+Coupon (\begin{DoxyParamCaption}\item[{std\+::string}]{coupon\+Code }\end{DoxyParamCaption})}
+
+
+
+Individual \mbox{\hyperlink{class_coupon}{Coupon}} item print method. 
+
+Prints an individual coupon object with its code and discount attributes 
+\begin{DoxyParams}{Parameters}
+{\em string} & coupon\+Code of coupon to be printed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_coupon_manager_a4e3b0e1a5862cc5e92938bac2fe2d01f}\label{class_coupon_manager_a4e3b0e1a5862cc5e92938bac2fe2d01f}} 
+\index{CouponManager@{CouponManager}!removeCoupon@{removeCoupon}}
+\index{removeCoupon@{removeCoupon}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{removeCoupon()}{removeCoupon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Coupon\+Manager\+::remove\+Coupon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coupon}{Coupon}}}]{coupon }\end{DoxyParamCaption})}
+
+
+
+Removes a \mbox{\hyperlink{class_coupon}{Coupon}} from the list given the \mbox{\hyperlink{class_coupon}{Coupon}} object. 
+
+Removes a given coupon from the list 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_coupon}{Coupon}}} & coupon to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_coupon_manager_a089a282f07904ebed417b31c873799fa}\label{class_coupon_manager_a089a282f07904ebed417b31c873799fa}} 
+\index{CouponManager@{CouponManager}!removeCoupon@{removeCoupon}}
+\index{removeCoupon@{removeCoupon}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{removeCoupon()}{removeCoupon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Coupon\+Manager\+::remove\+Coupon (\begin{DoxyParamCaption}\item[{std\+::string}]{coupon\+Code }\end{DoxyParamCaption})}
+
+
+
+Removes a \mbox{\hyperlink{class_coupon}{Coupon}} from the list given a code. 
+
+Removes a specified coupon from the system given its code 
+\begin{DoxyParams}{Parameters}
+{\em string} & coupon\+Code of coupon to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_coupon_manager_a43f1e53efd9f32e0c0bfad33a5aa988d}\label{class_coupon_manager_a43f1e53efd9f32e0c0bfad33a5aa988d}} 
+\index{CouponManager@{CouponManager}!setCoupons@{setCoupons}}
+\index{setCoupons@{setCoupons}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{setCoupons()}{setCoupons()}}
+{\footnotesize\ttfamily void Coupon\+Manager\+::set\+Coupons (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_coupon}{Coupon}} $>$}]{coupons }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_coupon}{Coupon}} list setter method. 
+
+Adds a given list of coupons to the maintained coupon list 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Coupon$>$} & list\+Of\+Coupons \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_coupon_manager_a2df61637de31507dab51b534c702887f}\label{class_coupon_manager_a2df61637de31507dab51b534c702887f}} 
+\index{CouponManager@{CouponManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} $\ast$ Coupon\+Manager\+::\+\_\+instance =N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_coupon}{Coupon}} Manager class. 
+
+Allows an instance of \mbox{\hyperlink{class_coupon_manager}{Coupon\+Manager}} to be created
+
+This class manages the list of Coupons in the system \begin{DoxyAuthor}{Author}
+Kyra Hinnegan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 22, 2019
+\end{DoxyDate}
+\mbox{\hyperlink{class_coupon}{Coupon}} Manager instance
+
+Singleton instance of the \mbox{\hyperlink{class_coupon}{Coupon}} Manager \mbox{\Hypertarget{class_coupon_manager_a32222fe928b12936caefe6268bd54fba}\label{class_coupon_manager_a32222fe928b12936caefe6268bd54fba}} 
+\index{CouponManager@{CouponManager}!listOfCoupons@{listOfCoupons}}
+\index{listOfCoupons@{listOfCoupons}!CouponManager@{CouponManager}}
+\doxysubsubsection{\texorpdfstring{listOfCoupons}{listOfCoupons}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_coupon}{Coupon}}$>$ Coupon\+Manager\+::list\+Of\+Coupons\hspace{0.3cm}{\ttfamily [private]}}
+
+List of the current \mbox{\hyperlink{class_coupon}{Coupon}} objects in the system 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Coupon\+Manager.\+h\item 
+Coupon\+Manager.\+cpp\end{DoxyCompactItemize}

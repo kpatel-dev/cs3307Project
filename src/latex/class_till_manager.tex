@@ -1,0 +1,237 @@
+\hypertarget{class_till_manager}{}\doxysection{Till\+Manager Class Reference}
+\label{class_till_manager}\index{TillManager@{TillManager}}
+
+
+{\ttfamily \#include $<$Till\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_till_manager_a0573ac0e95b9f29b7c7495832aeb3a40}{$\sim$\+Till\+Manager}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $>$ \mbox{\hyperlink{class_till_manager_ae828b8baa678144cad18f71d8eaf4360}{get\+Tills}} ()
+\item 
+void \mbox{\hyperlink{class_till_manager_a1ede54b576c3e32bf85bcf9abfb42685}{set\+Tills}} (std\+::vector$<$ \mbox{\hyperlink{class_till}{Till}} $>$ \mbox{\hyperlink{class_till_manager_a36046edb3cfddc8665b8d2520f3c6af6}{tills}})
+\item 
+void \mbox{\hyperlink{class_till_manager_a63e5efd59bbdfe8ca7726fda9cb2b480}{print\+All\+Tills}} ()
+\item 
+void \mbox{\hyperlink{class_till_manager_ab7e5dfe1cfd36810e77fe4614316458e}{print\+Till}} (std\+::string id)
+\item 
+void \mbox{\hyperlink{class_till_manager_ab7b8afde2a57fff7eb573f19b7055cb1}{add\+Till}} (\mbox{\hyperlink{class_till}{Till}} till)
+\item 
+void \mbox{\hyperlink{class_till_manager_afbe92fae9ca12e2fa931c2fc38136de8}{remove\+Till}} (std\+::string id)
+\item 
+void \mbox{\hyperlink{class_till_manager_a3c78bf143b5e09ac5542be3f357d4ffb}{remove\+Till}} (\mbox{\hyperlink{class_till}{Till}} till)
+\item 
+\mbox{\hyperlink{class_till}{Till}} $\ast$ \mbox{\hyperlink{class_till_manager_a2a92a0cc61db0736c78f29515c88bfe2}{find\+Till}} (std\+::string id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_till_manager}{Till\+Manager}} \& \mbox{\hyperlink{class_till_manager_a444c92ee1b932ba41e8c65c59066ad71}{instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_till_manager_a96cff6518943c5c87ea887513d9e75da}{Till\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_till_manager_a2f9cd2aab0dce6e9286051e6689cdfc4}{Till\+Manager}} (\mbox{\hyperlink{class_till_manager}{Till\+Manager}} \&other)
+\item 
+\mbox{\hyperlink{class_till_manager}{Till\+Manager}} \& \mbox{\hyperlink{class_till_manager_a85aae0c1469305684203dded5b1e2536}{operator=}} (\mbox{\hyperlink{class_till_manager}{Till\+Manager}} other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_till}{Till}} $>$ \mbox{\hyperlink{class_till_manager_a36046edb3cfddc8665b8d2520f3c6af6}{tills}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_till_manager}{Till\+Manager}} $\ast$ \mbox{\hyperlink{class_till_manager_a0045358d4823016e0ac09ce258d095de}{\+\_\+instance}} =N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_till}{Till}} Manager header file
+
+This class allows you to create instances of a \mbox{\hyperlink{class_till}{Till}} and has several funtions to be able to manuplulate the data, such as getters, setters and deletes 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_till_manager_a2f9cd2aab0dce6e9286051e6689cdfc4}\label{class_till_manager_a2f9cd2aab0dce6e9286051e6689cdfc4}} 
+\index{TillManager@{TillManager}!TillManager@{TillManager}}
+\index{TillManager@{TillManager}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{TillManager()}{TillManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Till\+Manager\+::\+Till\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_till_manager}{Till\+Manager}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+The class allows one instance of a till list per instance manager reference \mbox{\hyperlink{class_till}{Till}} manager constructor By setting these private it prevents copying and assignment to other class as they should not be accessing this 
+\begin{DoxyParams}{Parameters}
+{\em Till\+Manager\&} & other\\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_till}{Till}} Manager constructor Prevents copying or sharing but reducing these to nothing and not adding any info or an instance to be able to work with it 
+\begin{DoxyParams}{Parameters}
+{\em Till\+Manager\&} & other \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_till_manager_a96cff6518943c5c87ea887513d9e75da}\label{class_till_manager_a96cff6518943c5c87ea887513d9e75da}} 
+\index{TillManager@{TillManager}!TillManager@{TillManager}}
+\index{TillManager@{TillManager}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{TillManager()}{TillManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Till\+Manager\+::\+Till\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{class_till}{Till}} Manager protected constructor This is a singleton implementation (protected constructor) used to clear an instance of the Tillmanager, removes all inside \mbox{\Hypertarget{class_till_manager_a0573ac0e95b9f29b7c7495832aeb3a40}\label{class_till_manager_a0573ac0e95b9f29b7c7495832aeb3a40}} 
+\index{TillManager@{TillManager}!````~TillManager@{$\sim$TillManager}}
+\index{````~TillManager@{$\sim$TillManager}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$TillManager()}{~TillManager()}}
+{\footnotesize\ttfamily Till\+Manager\+::$\sim$\+Till\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\hyperlink{class_till}{Till}} manager destructor This is a virtual method that is meant to be a destructor of an instance that is no longer required
+
+\mbox{\hyperlink{class_till}{Till}} Manager destructor When the \mbox{\hyperlink{class_till}{Till}} manager is no longer required this destructs the instance and clears the items 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_till_manager_ab7b8afde2a57fff7eb573f19b7055cb1}\label{class_till_manager_ab7b8afde2a57fff7eb573f19b7055cb1}} 
+\index{TillManager@{TillManager}!addTill@{addTill}}
+\index{addTill@{addTill}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{addTill()}{addTill()}}
+{\footnotesize\ttfamily void Till\+Manager\+::add\+Till (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_till}{Till}}}]{till }\end{DoxyParamCaption})}
+
+Add new till method Tries to add a till to the list of all tills, if the id already exists in the list then it comments saying you should remove the old one before adding a new till with the matching id. 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_till}{Till}}} & object to be added to list of Tills \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_till_manager_a2a92a0cc61db0736c78f29515c88bfe2}\label{class_till_manager_a2a92a0cc61db0736c78f29515c88bfe2}} 
+\index{TillManager@{TillManager}!findTill@{findTill}}
+\index{findTill@{findTill}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{findTill()}{findTill()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_till}{Till}} $\ast$ Till\+Manager\+::find\+Till (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+Find till method This method tries to locate a till by matching the id from the list of tills, if the id does not exist in the list then it comments saying that the till was not found 
+\begin{DoxyParams}{Parameters}
+{\em string} & till id to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_till}{Till}} object found from list of tills 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_till_manager_ae828b8baa678144cad18f71d8eaf4360}\label{class_till_manager_ae828b8baa678144cad18f71d8eaf4360}} 
+\index{TillManager@{TillManager}!getTills@{getTills}}
+\index{getTills@{getTills}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{getTills()}{getTills()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_till}{Till}} $>$ Till\+Manager\+::get\+Tills (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tills getter method This is a get method that gets the set of tills and returns them \begin{DoxyReturn}{Returns}
+vector set of tills
+\end{DoxyReturn}
+\mbox{\hyperlink{class_till}{Till}} getter method This returns the set of tills which are in the current \mbox{\hyperlink{class_till}{Till}} \begin{DoxyReturn}{Returns}
+vector set of tills 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_till_manager_a444c92ee1b932ba41e8c65c59066ad71}\label{class_till_manager_a444c92ee1b932ba41e8c65c59066ad71}} 
+\index{TillManager@{TillManager}!instance@{instance}}
+\index{instance@{instance}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_till_manager}{Till\+Manager}} \& Till\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Prevents instantiation of the of the \mbox{\hyperlink{class_till}{Till}} manager by making a protected class Instance method There is no public constructor (singleton) but instead an instance method to get the singleton object
+
+\mbox{\hyperlink{class_till}{Till}} Manager constructor If the \mbox{\hyperlink{class_till}{Till}} manager doesnt exist then it creates a new instance of the \mbox{\hyperlink{class_till}{Till}} manager then returns such instance in the form of a pointer \begin{DoxyReturn}{Returns}
+a pointer to the instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_till_manager_a85aae0c1469305684203dded5b1e2536}\label{class_till_manager_a85aae0c1469305684203dded5b1e2536}} 
+\index{TillManager@{TillManager}!operator=@{operator=}}
+\index{operator=@{operator=}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_till_manager}{Till\+Manager}} \& Till\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_till_manager}{Till\+Manager}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{class_till}{Till}} manager constructor By setting these private it prevents copying and assignment to other class as they should not be accessing this 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_till_manager}{Till\+Manager}}} & other\\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_till}{Till}} Manager constructor Prevents copying or sharing but reducing these to nothing and not adding any info or an instance to be able to work with it 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_till_manager}{Till\+Manager}}} & other \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_till_manager_a63e5efd59bbdfe8ca7726fda9cb2b480}\label{class_till_manager_a63e5efd59bbdfe8ca7726fda9cb2b480}} 
+\index{TillManager@{TillManager}!printAllTills@{printAllTills}}
+\index{printAllTills@{printAllTills}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{printAllTills()}{printAllTills()}}
+{\footnotesize\ttfamily void Till\+Manager\+::print\+All\+Tills (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here are some additional methods to help maintain the data structure
+
+Print tills method Takes the full list of all tills and for that size loops through sending each line to the other print tills where it does a job of printing off all information about the one object given to it \mbox{\Hypertarget{class_till_manager_ab7e5dfe1cfd36810e77fe4614316458e}\label{class_till_manager_ab7e5dfe1cfd36810e77fe4614316458e}} 
+\index{TillManager@{TillManager}!printTill@{printTill}}
+\index{printTill@{printTill}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{printTill()}{printTill()}}
+{\footnotesize\ttfamily void Till\+Manager\+::print\+Till (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+Print detailed till method For each item given to it, goes and searches through the list until it finds the first matching id then prints out all attributes in relation to that item 
+\begin{DoxyParams}{Parameters}
+{\em string} & \mbox{\hyperlink{class_till}{Till}} item id \\
+\hline
+\end{DoxyParams}
+if it can not find the till then jsut prints it cant find it\mbox{\Hypertarget{class_till_manager_afbe92fae9ca12e2fa931c2fc38136de8}\label{class_till_manager_afbe92fae9ca12e2fa931c2fc38136de8}} 
+\index{TillManager@{TillManager}!removeTill@{removeTill}}
+\index{removeTill@{removeTill}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{removeTill()}{removeTill()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Till\+Manager\+::remove\+Till (\begin{DoxyParamCaption}\item[{std\+::string}]{Id }\end{DoxyParamCaption})}
+
+Remove till (by id) method This method tries to remove an till by matching the id from the list of tills, if the id does not exist in the list then it comments saying that the till was not found 
+\begin{DoxyParams}{Parameters}
+{\em string} & id of till to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_till_manager_a3c78bf143b5e09ac5542be3f357d4ffb}\label{class_till_manager_a3c78bf143b5e09ac5542be3f357d4ffb}} 
+\index{TillManager@{TillManager}!removeTill@{removeTill}}
+\index{removeTill@{removeTill}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{removeTill()}{removeTill()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Till\+Manager\+::remove\+Till (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_till}{Till}}}]{till }\end{DoxyParamCaption})}
+
+Remove till (by till) method This method tries to remove a till by extracting its id then calling the remove by id method 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_till}{Till}}} & object to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_till_manager_a1ede54b576c3e32bf85bcf9abfb42685}\label{class_till_manager_a1ede54b576c3e32bf85bcf9abfb42685}} 
+\index{TillManager@{TillManager}!setTills@{setTills}}
+\index{setTills@{setTills}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{setTills()}{setTills()}}
+{\footnotesize\ttfamily void Till\+Manager\+::set\+Tills (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_till}{Till}} $>$}]{tills }\end{DoxyParamCaption})}
+
+Tills setter method This is a set method that takes a set of tills and replaces the current set with such 
+\begin{DoxyParams}{Parameters}
+{\em vector} & set of tills\\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_till}{Till}} setter method This clears the old \mbox{\hyperlink{class_till}{Till}} then sets the current \mbox{\hyperlink{class_till}{Till}} by adding new items passed in by parameter, one new at a time is added in a loop 
+\begin{DoxyParams}{Parameters}
+{\em vector} & of new \mbox{\hyperlink{class_till}{Till}} items \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_till_manager_a0045358d4823016e0ac09ce258d095de}\label{class_till_manager_a0045358d4823016e0ac09ce258d095de}} 
+\index{TillManager@{TillManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_till_manager}{Till\+Manager}} $\ast$ Till\+Manager\+::\+\_\+instance =N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\hyperlink{class_till}{Till}} Manager instance Starts a instance as N\+U\+LL allowing it to be start getting written to \mbox{\Hypertarget{class_till_manager_a36046edb3cfddc8665b8d2520f3c6af6}\label{class_till_manager_a36046edb3cfddc8665b8d2520f3c6af6}} 
+\index{TillManager@{TillManager}!tills@{tills}}
+\index{tills@{tills}!TillManager@{TillManager}}
+\doxysubsubsection{\texorpdfstring{tills}{tills}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_till}{Till}}$>$ Till\+Manager\+::tills\hspace{0.3cm}{\ttfamily [private]}}
+
+The class only allows one instance of the \mbox{\hyperlink{class_till}{Till}} manager 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Till\+Manager.\+h\item 
+Till\+Manager.\+cpp\end{DoxyCompactItemize}
